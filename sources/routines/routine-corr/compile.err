@@ -1,0 +1,8 @@
+routine:
+22, Generating copyout(a(:,:)) [if not already present]
+    Generating implicit copy(.S0000) [if not already present]
+    Generating Tesla code
+    24, !$acc loop gang, vector(128) ! blockidx%x threadidx%x
+fill:
+30, Generating acc routine seq
+    Generating Tesla code

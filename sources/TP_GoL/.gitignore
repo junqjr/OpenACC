@@ -1,0 +1,8 @@
+movie
+*.o
+gol
+movie
+*.o
+gol
+*.out
+*.gray

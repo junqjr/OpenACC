@@ -1,0 +1,15 @@
+Accelerator Kernel Timing data
+enterdata  NVIDIA  devicenum=0
+time(us): 0
+23: data region reached 1 time
+25: data region reached 1 time
+compute  NVIDIA  devicenum=0
+time(us): 18
+29: compute region reached 1 time
+ 29: kernel launched 1 time
+  grid: [79]  block: [128]
+   device time(us): total=5 max=5 min=5 avg=5
+  elapsed time(us): total=364 max=364 min=364 avg=364
+29: data region reached 2 times
+ 29: data copyin transfers: 1
+  device time(us): total=13 max=13 min=13 avg=13

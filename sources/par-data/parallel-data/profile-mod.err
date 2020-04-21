@@ -1,0 +1,7 @@
+           Type Time(%) Name
+GPU activities: 67.24% [CUDA memcpy DtoH]
+                32.76% parallel_data_20_gpu
+     API calls: 65.14% cuDevicePrimaryCtxRetain
+                21.76% cuDevicePrimaryCtxRelease
+                 7.61% cuMemHostAlloc
+                 5.08% cuMemFreeHost

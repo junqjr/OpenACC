@@ -1,0 +1,7 @@
+enterdata:
+23, Generating enter data create(vec(1:s))
+25, Generating exit data delete(vec(1:s))
+compute:
+29, Generating Tesla code
+    30, !$acc loop gang, vector(128) ! blockidx%x threadidx%x
+29, Generating implicit copyout(vec(1:s)) [if not already present]

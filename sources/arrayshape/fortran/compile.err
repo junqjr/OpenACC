@@ -1,0 +1,11 @@
+array_shape:
+23, Generating copy(a(1:s,1:s)) [if not already present]
+    Generating Tesla code
+    24, !$acc loop gang ! blockidx%x
+    26, !$acc loop worker(4), vector(32) ! threadidx%y threadidx%x
+26, Loop is parallelizable
+32, Generating copy(a(1:s,100:199)) [if not already present]
+    Generating Tesla code
+    33, !$acc loop gang ! blockidx%x
+    35, !$acc loop worker(4), vector(32) ! threadidx%y threadidx%x
+35, Loop is parallelizable

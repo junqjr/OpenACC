@@ -1,0 +1,3 @@
+!$ACC directive <clauses>
+...
+!$ACC end directive

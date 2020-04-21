@@ -1,0 +1,21 @@
+           Type Time(%)     Time Calls       Avg       Min       Max  Name
+GPU activities: 47.59%  6.0764ms  1000  6.0760us  4.8320us  24.352us  [CUDA memcpy HtoD]
+                40.21%  5.1337ms  1001  5.1280us  3.8080us  19.935us  [CUDA memcpy DtoH]
+                12.18%  1.5552ms  1000  1.5550us  1.4070us  13.503us  para_37_gpu
+     API calls: 48.50%  115.20ms     1  115.20ms  115.20ms  115.20ms  cuDevicePrimaryCtxRetain
+                21.14%  50.208ms     1  50.208ms  50.208ms  50.208ms  cuDevicePrimaryCtxRelease
+                13.10%  31.106ms  3002  10.361us     859ns  61.105us  cuStreamSynchronize
+                 5.98%  14.198ms     1  14.198ms  14.198ms  14.198ms  cuMemHostAlloc
+                 4.48%  10.639ms     1  10.639ms  10.639ms  10.639ms  cuMemFreeHost
+                 2.53%  6.0090ms  1001  6.0030us  4.8850us  28.241us  cuLaunchKernel
+                 1.56%  3.6943ms  1000  3.6940us  3.0770us  28.117us  cuMemcpyHtoDAsync
+                 1.50%  3.5689ms  1001  3.5650us  2.9210us  23.222us  cuMemcpyDtoHAsync
+OpenACC (excl): 27.17%  21.357ms  2000  10.678us  1.4670us  62.106us  acc_wait@parallel-data-multi.f90:37
+                19.31%  15.178ms  1000  15.177us  4.5620us  40.211us  acc_wait@parallel-data-multi.f90:42
+                18.10%  14.231ms     1  14.231ms  14.231ms  14.231ms  acc_exit_data@parallel-data-multi.f90:29
+                 9.42%  7.4051ms  1000  7.4050us  5.7670us  390.34us  acc_enqueue_launch@parallel-data-multi.f90:37 (para_37_gpu)
+                 7.67%  6.0306ms  1000  6.0300us  4.6600us  350.63us  acc_enqueue_download@parallel-data-multi.f90:42
+                 6.70%  5.2692ms  1000  5.2690us  4.0230us  28.372us  acc_enter_data@parallel-data-multi.f90:37
+                 5.71%  4.4901ms  1000  4.4900us  3.7610us  28.943us  acc_enqueue_upload@parallel-data-multi.f90:37
+                 3.76%  2.9595ms  1000  2.9590us  2.3790us  21.317us  acc_exit_data@parallel-data-multi.f90:37
+                 1.80%  1.4138ms  1000  1.4130us  1.1650us  23.892us  acc_compute_construct@parallel-data-multi.f90:37

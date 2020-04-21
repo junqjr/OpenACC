@@ -1,0 +1,8 @@
+reduction:
+     15, Generating create(a(:)) [if not already present]
+     16, Generating Tesla code
+         17, !$acc loop gang, vector(128) ! blockidx%x threadidx%x
+     20, Generating Tesla code
+         20, Generating reduction(+:summ)
+         21, !$acc loop gang, vector(128) ! blockidx%x threadidx%x
+     20, Generating implicit copy(summ) [if not already present]

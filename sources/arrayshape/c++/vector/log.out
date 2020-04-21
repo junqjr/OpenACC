@@ -1,0 +1,24 @@
+
+Accelerator Kernel Timing data
+/home/cjunqueira/Documents/boulot/trainning/idris/openacc/examples/arrayshape/array-shape.f90
+  array_shape  NVIDIA  devicenum=0
+    time(us): 62,781
+    24: compute region reached 1 time
+        24: kernel launched 1 time
+            grid: [10000]  block: [128]
+            elapsed time(us): total=94,189 max=94,189 min=94,189 avg=94,189
+    24: data region reached 2 times
+        24: data copyin transfers: 24
+             device time(us): total=30,670 max=1,290 min=1,094 avg=1,277
+        32: data copyout transfers: 24
+             device time(us): total=31,789 max=1,409 min=1,127 avg=1,324
+    32: data region reached 1 time
+        32: data copyin transfers: 1
+             device time(us): total=322 max=322 min=322 avg=322
+    32: compute region reached 1 time
+        32: kernel launched 1 time
+            grid: [10000]  block: [128]
+             device time(us): total=0 max=0 min=0 avg=0
+Failing in Thread:1
+call to cuMemFreeHost returned error 700: Illegal address during kernel execution
+

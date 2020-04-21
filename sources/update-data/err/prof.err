@@ -1,0 +1,113 @@
+==16345== PGPROF is profiling process 16345, command: ./update-err.exec
+==16345== Profiling application: ./update-err.exec
+==16345== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   47.62%  61.472us        42  1.4630us  1.4400us  1.7920us  para_37_gpu
+                   44.84%  57.886us        42  1.3780us  1.3440us  1.6320us  [CUDA memset]
+                    4.02%  5.1840us         1  5.1840us  5.1840us  5.1840us  [CUDA memcpy DtoH]
+                    2.33%  3.0080us         1  3.0080us  3.0080us  3.0080us  para_30_gpu
+                    1.19%  1.5360us         1  1.5360us  1.5360us  1.5360us  para_46_gpu
+      API calls:   61.88%  119.64ms         1  119.64ms  119.64ms  119.64ms  cuDevicePrimaryCtxRetain
+                   24.33%  47.048ms         1  47.048ms  47.048ms  47.048ms  cuDevicePrimaryCtxRelease
+                    8.02%  15.513ms         1  15.513ms  15.513ms  15.513ms  cuMemHostAlloc
+                    4.84%  9.3547ms         1  9.3547ms  9.3547ms  9.3547ms  cuMemFreeHost
+                    0.32%  610.90us        87  7.0210us  4.5780us  9.7280us  cuStreamSynchronize
+                    0.30%  588.20us         1  588.20us  588.20us  588.20us  cuMemAllocHost
+                    0.12%  224.30us        44  5.0970us  4.3140us  23.784us  cuLaunchKernel
+                    0.06%  120.15us         1  120.15us  120.15us  120.15us  cuModuleLoadDataEx
+                    0.05%  101.24us         3  33.747us  4.6120us  91.973us  cuMemAlloc
+                    0.05%  92.224us        42  2.1950us  1.8260us  8.4440us  cuMemsetD32Async
+                    0.01%  18.833us         1  18.833us  18.833us  18.833us  cuMemcpyDtoHAsync
+                    0.00%  9.1600us         1  9.1600us  9.1600us  9.1600us  cuStreamCreate
+                    0.00%  8.3870us         1  8.3870us  8.3870us  8.3870us  cuDeviceGetPCIBusId
+                    0.00%  7.3930us         3  2.4640us     242ns  6.6890us  cuCtxSetCurrent
+                    0.00%  3.8100us         2  1.9050us  1.1010us  2.7090us  cuPointerGetAttributes
+                    0.00%  3.3670us         2  1.6830us     272ns  3.0950us  cuEventCreate
+                    0.00%  3.3460us         1  3.3460us  3.3460us  3.3460us  cuEventRecord
+                    0.00%  1.7810us         3     593ns     124ns  1.4580us  cuModuleGetFunction
+                    0.00%  1.7020us         3     567ns     112ns  1.4260us  cuDeviceGetCount
+                    0.00%  1.0710us         4     267ns     131ns     424ns  cuDeviceGetAttribute
+                    0.00%     756ns         1     756ns     756ns     756ns  cuEventSynchronize
+                    0.00%     534ns         2     267ns     107ns     427ns  cuDeviceGet
+                    0.00%     199ns         1     199ns     199ns     199ns  cuDeviceComputeCapability
+                    0.00%     182ns         1     182ns     182ns     182ns  cuCtxGetCurrent
+                    0.00%     143ns         1     143ns     143ns     143ns  cuDriverGetVersion
+ OpenACC (excl):   90.42%  15.532ms         1  15.532ms  15.532ms  15.532ms  acc_exit_data@update-err.f90:29
+                    3.70%  636.18us        84  7.5730us  5.8370us  10.225us  acc_wait@update-err.f90:37
+                    1.34%  230.22us        42  5.4810us  5.0980us  9.7840us  acc_enqueue_launch@update-err.f90:37 (para_37_gpu)
+                    1.21%  208.06us        42  4.9530us  2.1620us  96.313us  acc_enter_data@update-err.f90:37
+                    0.86%  148.23us         1  148.23us  148.23us  148.23us  acc_device_init@update-err.f90:29
+                    0.69%  117.88us        42  2.8060us  2.3870us  10.474us  acc_enqueue_upload@update-err.f90:37
+                    0.44%  75.136us        42  1.7880us  1.4150us  14.310us  acc_exit_data@update-err.f90:37
+                    0.32%  54.554us         1  54.554us  54.554us  54.554us  acc_enter_data@update-err.f90:29
+                    0.29%  49.511us        42  1.1780us  1.1110us  1.6220us  acc_compute_construct@update-err.f90:37
+                    0.24%  41.446us         1  41.446us  41.446us  41.446us  acc_enqueue_download@update-err.f90:50
+                    0.16%  27.734us         1  27.734us  27.734us  27.734us  acc_enqueue_launch@update-err.f90:30 (para_30_gpu)
+                    0.15%  25.863us         1  25.863us  25.863us  25.863us  acc_wait@update-err.f90:50
+                    0.06%  9.5250us         1  9.5250us  9.5250us  9.5250us  acc_compute_construct@update-err.f90:30
+                    0.05%  7.7900us         1  7.7900us  7.7900us  7.7900us  acc_wait@update-err.f90:46
+                    0.04%  7.1190us         1  7.1190us  7.1190us  7.1190us  acc_wait@update-err.f90:30
+                    0.03%  5.5620us         1  5.5620us  5.5620us  5.5620us  acc_enqueue_launch@update-err.f90:46 (para_46_gpu)
+                    0.01%  1.1120us         1  1.1120us  1.1120us  1.1120us  acc_compute_construct@update-err.f90:46
+                    0.00%       0ns         1       0ns       0ns       0ns  acc_alloc@update-err.f90:29
+                    0.00%       0ns         1       0ns       0ns       0ns  acc_create@update-err.f90:29
+                    0.00%       0ns         1       0ns       0ns       0ns  acc_delete@update-err.f90:50
+                    0.00%       0ns         1       0ns       0ns       0ns  acc_alloc@update-err.f90:37
+                    0.00%       0ns        42       0ns       0ns       0ns  acc_create@update-err.f90:37
+                    0.00%       0ns        42       0ns       0ns       0ns  acc_delete@update-err.f90:42
+
+======== CPU profiling result (bottom up):
+Time(%)      Time  Name
+ 77.23%  826.35ms  ???
+ 77.23%  826.35ms  | start_thread
+ 77.23%  826.35ms  |   clone
+ 11.88%  127.13ms  cuDevicePrimaryCtxRetain
+ 11.88%  127.13ms  | __pgi_uacc_cuda_init_device
+ 11.88%  127.13ms  |   __pgi_uacc_cuda_select_valid
+ 11.88%  127.13ms  |     __pgi_uacc_select_devid
+ 11.88%  127.13ms  |       __pgi_uacc_dataenterstart2
+ 11.88%  127.13ms  |         MAIN_
+ 11.88%  127.13ms  |           main
+ 11.88%  127.13ms  |             ???
+  4.95%  52.971ms  cuDevicePrimaryCtxRelease
+  4.95%  52.971ms  | __pgi_uacc_cuda_release_buffer
+  4.95%  52.971ms  |   __run_exit_handlers
+  4.95%  52.971ms  |     ???
+  4.95%  52.971ms  |       main
+  4.95%  52.971ms  |         ???
+  2.97%  31.783ms  cuInit
+  2.97%  31.783ms  | __pgi_uacc_cuda_init
+  2.97%  31.783ms  |   __pgi_uacc_enumerate
+  2.97%  31.783ms  |     __pgi_uacc_initialize
+  2.97%  31.783ms  |       __pgi_uacc_dataenterstart2
+  2.97%  31.783ms  |         MAIN_
+  2.97%  31.783ms  |           main
+  2.97%  31.783ms  |             ???
+  0.99%  10.594ms  cuMemHostAlloc
+  0.99%  10.594ms  | __pgi_uacc_cuda_get_buffer
+  0.99%  10.594ms  |   __pgi_uacc_cuda_datadown1
+  0.99%  10.594ms  |     __pgi_uacc_datadown1
+  0.99%  10.594ms  |       __pgi_uacc_datadownx
+  0.99%  10.594ms  |         __pgi_uacc_dataoffb2
+  0.99%  10.594ms  |           MAIN_
+  0.99%  10.594ms  |             main
+  0.99%  10.594ms  |               ???
+  0.99%  10.594ms  cuMemFreeHost
+  0.99%  10.594ms  | __pgi_uacc_cuda_free_device_buffers
+  0.99%  10.594ms  |   __pgi_uacc_cuda_release_buffer
+  0.99%  10.594ms  |     __run_exit_handlers
+  0.99%  10.594ms  |       ???
+  0.99%  10.594ms  |         main
+  0.99%  10.594ms  |           ???
+  0.99%  10.594ms  ???
+  0.99%  10.594ms    __pgi_uacc_present_add2
+  0.99%  10.594ms      __pgi_uacc_present_add
+  0.99%  10.594ms        do_create
+  0.99%  10.594ms          __pgi_uacc_excontig_search
+  0.99%  10.594ms            __pgi_uacc_create
+  0.99%  10.594ms              __pgi_uacc_dataonb
+  0.99%  10.594ms                MAIN_
+  0.99%  10.594ms                  main
+  0.99%  10.594ms                    ???
+
+======== Data collected at 100Hz frequency

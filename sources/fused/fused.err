@@ -1,0 +1,49 @@
+
+Accelerator Kernel Timing data
+/home/cjunqueira/Documents/boulot/trainning/idris/openacc/examples/fused/fused.f90
+  fused  NVIDIA  devicenum=0
+    time(us): 123
+    18: compute region reached 1 time
+        19: kernel launched 1 time
+            grid: [79]  block: [128]
+             device time(us): total=3 max=3 min=3 avg=3
+            elapsed time(us): total=355 max=355 min=355 avg=355
+    18: data region reached 2 times
+        24: data copyout transfers: 3
+             device time(us): total=39 max=22 min=8 avg=13
+    25: compute region reached 1 time
+        25: data copyin transfers: 1
+             device time(us): total=5 max=5 min=5 avg=5
+        27: kernel launched 1 time
+            grid: [79]  block: [128]
+             device time(us): total=4 max=4 min=4 avg=4
+            elapsed time(us): total=31 max=31 min=31 avg=31
+        27: reduction kernel launched 1 time
+            grid: [1]  block: [256]
+             device time(us): total=3 max=3 min=3 avg=3
+            elapsed time(us): total=18 max=18 min=18 avg=18
+        27: data copyout transfers: 1
+             device time(us): total=12 max=12 min=12 avg=12
+    25: data region reached 2 times
+        25: data copyin transfers: 1
+             device time(us): total=14 max=14 min=14 avg=14
+        31: data copyout transfers: 1
+             device time(us): total=8 max=8 min=8 avg=8
+    32: compute region reached 1 time
+        32: data copyin transfers: 1
+             device time(us): total=4 max=4 min=4 avg=4
+        33: kernel launched 1 time
+            grid: [79]  block: [32x4]
+             device time(us): total=3 max=3 min=3 avg=3
+            elapsed time(us): total=19 max=19 min=19 avg=19
+        33: reduction kernel launched 1 time
+            grid: [1]  block: [256]
+             device time(us): total=3 max=3 min=3 avg=3
+            elapsed time(us): total=18 max=18 min=18 avg=18
+        33: data copyout transfers: 1
+             device time(us): total=8 max=8 min=8 avg=8
+    32: data region reached 2 times
+        32: data copyin transfers: 1
+             device time(us): total=8 max=8 min=8 avg=8
+        37: data copyout transfers: 1
+             device time(us): total=9 max=9 min=9 avg=9

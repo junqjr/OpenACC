@@ -1,0 +1,22 @@
+
+Accelerator Kernel Timing data
+/home/cjunqueira/Documents/boulot/trainning/idris/openacc/examples/async/sync/sync.f90
+  async  NVIDIA  devicenum=0
+    time(us): 23
+    27: data region reached 1 time
+    34: compute region reached 1 time
+        34: kernel launched 1 time
+            grid: [79]  block: [128]
+             device time(us): total=4 max=4 min=4 avg=4
+            elapsed time(us): total=371 max=371 min=371 avg=371
+    34: data region reached 2 times
+    40: update directive reached 1 time
+        40: data copyin transfers: 1
+             device time(us): total=16 max=16 min=16 avg=16
+    42: compute region reached 1 time
+        42: kernel launched 1 time
+            grid: [79]  block: [128]
+             device time(us): total=3 max=3 min=3 avg=3
+            elapsed time(us): total=30 max=30 min=30 avg=30
+    42: data region reached 2 times
+    47: data region reached 1 time

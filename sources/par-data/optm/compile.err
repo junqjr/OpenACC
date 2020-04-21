@@ -1,0 +1,6 @@
+parallel_data:
+28, Generating copyout(a(:s)) [if not already present]
+29, Generating Tesla code
+    30, !$acc loop gang, vector(128) ! blockidx%x threadidx%x
+34, Generating Tesla code
+    35, !$acc loop gang, vector(128) ! blockidx%x threadidx%x

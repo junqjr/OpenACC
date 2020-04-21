@@ -1,0 +1,13 @@
+
+Accelerator Kernel Timing data
+/home/cjunqueira/Documents/boulot/trainning/idris/openacc/examples/loop/GRWPVS/loop_grwpvs.f90
+  loop  NVIDIA  devicenum=0
+    time(us): 67
+    44: compute region reached 1 time
+        44: kernel launched 1 time
+            grid: [10]  block: [1]
+             device time(us): total=41 max=41 min=41 avg=41
+            elapsed time(us): total=339 max=339 min=339 avg=339
+    44: data region reached 2 times
+        49: data copyout transfers: 1
+             device time(us): total=26 max=26 min=26 avg=26

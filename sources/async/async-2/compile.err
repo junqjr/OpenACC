@@ -1,0 +1,10 @@
+async:
+25, Generating enter data create(c(1:s),b(1:s),a(1:s))
+31, Generating Tesla code
+ 32, !$acc loop gang, vector(128) ! blockidx%x threadidx%x
+31, Generating implicit copyout(a(1:10000)) [if not already present]
+37, Generating update device(b(:))
+38, Generating Tesla code
+ 39, !$acc loop gang, vector(128) ! blockidx%x threadidx%x
+38, Generating implicit copyout(c(1:10000)) [if not already present]
+42, Generating exit data delete(c(1:s),b(1:s),a(1:s))

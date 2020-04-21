@@ -1,0 +1,17 @@
+fused:
+18, Generating implicit copyout(a1(:),a2(:),b(:)) [if not already present]
+19, Loop is parallelizable
+    Generating Tesla code
+    19, !$acc loop gang, vector(128) ! blockidx%x threadidx%x
+25, Generating implicit copyin(b(:)) [if not already present]
+    Generating implicit copyout(a1(:)) [if not already present]
+27, Loop is parallelizable
+    Generating Tesla code
+    27, !$acc loop gang, vector(128) ! blockidx%x threadidx%x
+    29, Generating implicit reduction(+:summ1)
+32, Generating implicit copyin(b(:)) [if not already present]
+    Generating implicit copyout(a2(:)) [if not already present]
+33, Loop is parallelizable
+    Generating Tesla code
+    33, !$acc loop gang, worker(4), vector(32) ! blockidx%x threadidx%y threadidx%x
+    35, Generating implicit reduction(+:summ2)

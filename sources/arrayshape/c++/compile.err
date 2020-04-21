@@ -1,0 +1,11 @@
+main:
+26, Generating copy(a[:s][:s]) [if not already present]
+    Generating Tesla code
+    31, #pragma acc loop gang /* blockIdx.x */
+    33, #pragma acc loop worker(4), vector(32) /* threadIdx.y threadIdx.
+33, Loop is parallelizable
+34, Generating copy(a[:s][99:100]) [if not already present]
+    Generating Tesla code
+    37, #pragma acc loop gang /* blockIdx.x */
+    39, #pragma acc loop worker(4), vector(32) /* threadIdx.y threadIdx.
+39, Loop is parallelizable

@@ -1,0 +1,24 @@
+PCAST Float summ in function reduction, pb-sync.f90:32
+idx: 0 FAIL ABS  act: 5.00267200e+07 exp: 1.67772160e+07 dif: 3.32495040e+07
+compared 2 blocks, 100000001 elements, 400000004 bytes
+1 errors found in 1 blocks
+absolute tolerance = 0.00000000000000000e+00, abs=0
+
+Accelerator Kernel Timing data
+pb-sync.f90
+reduction  NVIDIA  devicenum=0
+time(us): 41,027
+23: compute region reached 1 time
+ 23: kernel launched 1 time
+  grid: [65535]  block: [128]
+   device time(us): total=9,036 max=9,036 min=9,036 avg=9,036
+  elapsed time(us): total=9,077 max=9,077 min=9,077 avg=9,077
+ 23: reduction kernel launched 1 time
+  grid: [1]  block: [256]
+   device time(us): total=83 max=83 min=83 avg=83
+  elapsed time(us): total=111 max=111 min=111 avg=111
+23: data region reached 2 times
+ 23: data copyin transfers: 1
+  device time(us): total=7 max=7 min=7 avg=7
+ 32: data copyout transfers: 25
+  device time(us): total=31,901 max=1,433 min=12 avg=1,276

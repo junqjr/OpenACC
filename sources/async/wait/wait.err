@@ -1,0 +1,27 @@
+Timing may be affected by asynchronous behavior
+set PGI_ACC_SYNCHRONOUS to 1 to disable async() clauses
+async  NVIDIA  devicenum=0
+time(us): 28
+25: data region reached 1 time
+31: compute region reached 1 time
+ 31: kernel launched 1 time
+  grid: [79]  block: [128]
+   device time(us): total=4 max=4 min=4 avg=4
+  elapsed time(us): total=382 max=382 min=382 avg=382
+31: data region reached 2 times
+37: update directive reached 1 time
+ 37: data copyin transfers: 1
+  device time(us): total=16 max=16 min=16 avg=16
+38: compute region reached 1 time
+ 38: kernel launched 1 time
+  grid: [79]  block: [128]
+   device time(us): total=3 max=3 min=3 avg=3
+  elapsed time(us): total=34 max=34 min=34 avg=34
+38: data region reached 2 times
+42: compute region reached 1 time
+ 42: kernel launched 1 time
+  grid: [79]  block: [128]
+   device time(us): total=5 max=5 min=5 avg=5
+  elapsed time(us): total=21 max=21 min=21 avg=21
+42: data region reached 2 times
+46: data region reached 1 time

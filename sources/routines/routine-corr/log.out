@@ -1,0 +1,16 @@
+            2
+
+Accelerator Kernel Timing data
+/home/cjunqueira/Documents/boulot/trainning/idris/openacc/examples/routines/routine-corr/routine-corr.f90
+  routine  NVIDIA  devicenum=0
+    time(us): 37,557
+    22: compute region reached 1 time
+        22: kernel launched 1 time
+            grid: [79]  block: [128]
+             device time(us): total=5,836 max=5,836 min=5,836 avg=5,836
+            elapsed time(us): total=5,876 max=5,876 min=5,876 avg=5,876
+    22: data region reached 4 times
+        22: data copyin transfers: 2
+             device time(us): total=18 max=12 min=6 avg=9
+        27: data copyout transfers: 26
+             device time(us): total=31,703 max=1,335 min=5 avg=1,219

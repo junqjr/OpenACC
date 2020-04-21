@@ -1,0 +1,6 @@
+
+(acroread:24621): Gtk-WARNING **: 17:50:05.805: Unable to locate theme engine in module_path: "adwaita",
+
+(acroread:24621): Gtk-WARNING **: 17:50:05.815: Unable to locate theme engine in module_path: "adwaita",
+Gtk-Message: 17:50:05.831: Failed to load module "pk-gtk-module"
+Gtk-Message: 17:50:05.831: Failed to load module "canberra-gtk-module"

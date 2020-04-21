@@ -1,0 +1,19 @@
+time(us): 26,006
+28: compute region reached 1 time
+ 28: kernel launched 1 time
+  grid: [79]  block: [128]
+   device time(us): total=3 max=3 min=3 avg=3
+  elapsed time(us): total=372 max=372 min=372 avg=372
+28: data region reached 2 times
+ 33: data copyout transfers: 1
+  device time(us): total=21 max=21 min=21 avg=21
+35: compute region reached 1000 times
+ 35: kernel launched 1000 times
+  grid: [79]  block: [128]
+   device time(us): total=2,032 max=12 min=2 avg=2
+  elapsed time(us): total=19,385 max=56 min=15 avg=19
+35: data region reached 2000 times
+ 35: data copyin transfers: 1000
+  device time(us): total=11,589 max=36 min=7 avg=11
+ 40: data copyout transfers: 1000
+  device time(us): total=12,361 max=40 min=7 avg=12

@@ -1,0 +1,56 @@
+        11000
+OF is profiling process 28291, command: ./a.out
+==28291== Profiling application: ./a.out
+==28291== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   98.72%  1.4593ms      1000  1.4590us  1.4070us  12.447us  para_37_gpu
+                    0.69%  10.272us         2  5.1360us  4.8960us  5.3760us  [CUDA memcpy DtoH]
+                    0.37%  5.5040us         1  5.5040us  5.5040us  5.5040us  [CUDA memcpy HtoD]
+                    0.21%  3.0720us         1  3.0720us  3.0720us  3.0720us  para_28_gpu
+      API calls:   64.76%  143.60ms         1  143.60ms  143.60ms  143.60ms  cuDevicePrimaryCtxRetain
+                   19.97%  44.288ms         1  44.288ms  44.288ms  44.288ms  cuDevicePrimaryCtxRelease
+                    6.45%  14.306ms         1  14.306ms  14.306ms  14.306ms  cuMemHostAlloc
+                    3.97%  8.8095ms         1  8.8095ms  8.8095ms  8.8095ms  cuMemFreeHost
+                    2.94%  6.5292ms      1004  6.5030us     884ns  27.722us  cuStreamSynchronize
+                    1.54%  3.4067ms      1001  3.4030us  3.0620us  23.182us  cuLaunchKernel
+                    0.25%  549.57us         1  549.57us  549.57us  549.57us  cuMemAllocHost
+                    0.04%  96.498us         1  96.498us  96.498us  96.498us  cuModuleLoadDataEx
+                    0.04%  86.741us         2  43.370us  4.7260us  82.015us  cuMemAlloc
+                    0.01%  23.353us         2  11.676us  4.6220us  18.731us  cuMemcpyDtoHAsync
+                    0.00%  7.8840us         1  7.8840us  7.8840us  7.8840us  cuMemcpyHtoDAsync
+                    0.00%  7.8630us         1  7.8630us  7.8630us  7.8630us  cuStreamCreate
+                    0.00%  6.3590us         1  6.3590us  6.3590us  6.3590us  cuDeviceGetPCIBusId
+                    0.00%  4.9430us         3  1.6470us     186ns  4.3560us  cuCtxSetCurrent
+                    0.00%  4.8530us         2  2.4260us  1.3750us  3.4780us  cuEventRecord
+                    0.00%  3.4510us         2  1.7250us     260ns  3.1910us  cuEventCreate
+                    0.00%  2.4820us         3     827ns     210ns  1.8760us  cuDeviceGetCount
+                    0.00%  2.0740us         2  1.0370us     207ns  1.8670us  cuModuleGetFunction
+                    0.00%  1.9900us         1  1.9900us  1.9900us  1.9900us  cuPointerGetAttributes
+                    0.00%  1.7680us         4     442ns     319ns     600ns  cuDeviceGetAttribute
+                    0.00%  1.4310us         2     715ns     621ns     810ns  cuEventSynchronize
+                    0.00%  1.3340us         2     667ns     316ns  1.0180us  cuDeviceGet
+                    0.00%     544ns         1     544ns     544ns     544ns  cuDriverGetVersion
+                    0.00%     404ns         1     404ns     404ns     404ns  cuDeviceComputeCapability
+                    0.00%     383ns         1     383ns     383ns     383ns  cuCtxGetCurrent
+ OpenACC (excl):   53.03%  14.340ms         1  14.340ms  14.340ms  14.340ms  acc_exit_data@parallel-data-single.f90:28
+                   26.16%  7.0745ms      1000  7.0740us  1.4780us  28.318us  acc_wait@parallel-data-single.f90:37
+                   15.58%  4.2143ms      1000  4.2140us  3.7990us  21.628us  acc_enqueue_launch@parallel-data-single.f90:37 (para_37_gpu)
+                    3.97%  1.0743ms      1000  1.0740us  1.0140us  16.360us  acc_compute_construct@parallel-data-single.f90:37
+                    0.44%  119.13us         1  119.13us  119.13us  119.13us  acc_device_init@parallel-data-single.f90:28
+                    0.17%  45.712us         1  45.712us  45.712us  45.712us  acc_enter_data@parallel-data-single.f90:28
+                    0.16%  43.339us         1  43.339us  43.339us  43.339us  acc_enqueue_download@parallel-data-single.f90:33
+                    0.10%  27.048us         1  27.048us  27.048us  27.048us  acc_enqueue_launch@parallel-data-single.f90:28 (para_28_gpu)
+                    0.10%  26.238us         1  26.238us  26.238us  26.238us  acc_wait@parallel-data-single.f90:33
+                    0.05%  14.494us         1  14.494us  14.494us  14.494us  acc_enter_data@parallel-data-single.f90:35
+                    0.05%  14.011us         1  14.011us  14.011us  14.011us  acc_wait@parallel-data-single.f90:44
+                    0.05%  13.477us         1  13.477us  13.477us  13.477us  acc_wait@parallel-data-single.f90:35
+                    0.04%  9.7190us         1  9.7190us  9.7190us  9.7190us  acc_compute_construct@parallel-data-single.f90:28
+                    0.03%  8.8430us         1  8.8430us  8.8430us  8.8430us  acc_enqueue_upload@parallel-data-single.f90:35
+                    0.03%  7.6910us         1  7.6910us  7.6910us  7.6910us  acc_wait@parallel-data-single.f90:28
+                    0.03%  7.1230us         1  7.1230us  7.1230us  7.1230us  acc_enqueue_download@parallel-data-single.f90:44
+                    0.02%  4.0820us         1  4.0820us  4.0820us  4.0820us  acc_exit_data@parallel-data-single.f90:35
+                    0.00%       0ns         1       0ns       0ns       0ns  acc_create@parallel-data-single.f90:35
+                    0.00%       0ns         1       0ns       0ns       0ns  acc_delete@parallel-data-single.f90:44
+                    0.00%       0ns         1       0ns       0ns       0ns  acc_alloc@parallel-data-single.f90:28
+                    0.00%       0ns         1       0ns       0ns       0ns  acc_create@parallel-data-single.f90:28
+                    0.00%       0ns         1       0ns       0ns       0ns  acc_delete@parallel-data-single.f90:33

@@ -1,0 +1,5 @@
+ before update self            0
+ after update self         2259
+ before end data         2259
+ second update host           42
+ after end data           42

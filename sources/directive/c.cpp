@@ -1,0 +1,4 @@
+#pragma acc directive <clauses>
+{
+  ...
+}

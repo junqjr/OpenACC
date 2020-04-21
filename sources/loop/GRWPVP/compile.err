@@ -1,0 +1,5 @@
+loop:
+49, Generating Tesla code
+    51, !$acc loop gang(10), worker(4), vector(32) ! blockidx%x threadidx%y threadidx%x
+49, Generating implicit copyout(a(:)) [if not already present]
+51, Loop is parallelizable

@@ -1,0 +1,11 @@
+gol:
+23, Accelerator serial kernel generated
+ Generating Tesla code
+ 24, !$acc do seq
+ 25, !$acc do seq
+ 26, !$acc do seq
+ 30, !$acc do seq
+ 31, !$acc do seq
+ 43, !$acc do seq
+ 44, !$acc do seq
+23, Generating implicit copy(world(:,:),old_world(:,:)) [if not already present]

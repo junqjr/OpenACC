@@ -1,0 +1,131 @@
+==29770== PGPROF is profiling process 29770, command: ./gol 1000 1000 100
+==29770== Profiling application: ./gol 1000 1000 100
+==29770== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:  100.00%  34.9999s         1  34.9999s  34.9999s  34.9999s  gol_23_gpu
+                    0.00%  640.20us         2  320.10us  315.54us  324.66us  [CUDA memcpy DtoH]
+                    0.00%  621.20us         2  310.60us  308.21us  312.98us  [CUDA memcpy HtoD]
+      API calls:   99.35%  35.0009s         3  11.6670s  315.70us  34.9999s  cuStreamSynchronize
+                    0.44%  154.61ms         1  154.61ms  154.61ms  154.61ms  cuDevicePrimaryCtxRetain
+                    0.14%  47.811ms         1  47.811ms  47.811ms  47.811ms  cuDevicePrimaryCtxRelease
+                    0.04%  15.349ms         1  15.349ms  15.349ms  15.349ms  cuMemHostAlloc
+                    0.03%  9.0684ms         1  9.0684ms  9.0684ms  9.0684ms  cuMemFreeHost
+                    0.01%  2.0233ms         1  2.0233ms  2.0233ms  2.0233ms  cuModuleLoadDataEx
+                    0.00%  577.74us         1  577.74us  577.74us  577.74us  cuMemAllocHost
+                    0.00%  492.52us         3  164.17us  80.280us  320.13us  cuMemAlloc
+                    0.00%  156.55us         1  156.55us  156.55us  156.55us  cuLaunchKernel
+                    0.00%  28.368us         2  14.184us  8.4720us  19.896us  cuMemcpyHtoDAsync
+                    0.00%  25.196us         2  12.598us  4.2930us  20.903us  cuMemcpyDtoHAsync
+                    0.00%  8.3830us         1  8.3830us  8.3830us  8.3830us  cuStreamCreate
+                    0.00%  7.6580us         3  2.5520us     219ns  6.9560us  cuCtxSetCurrent
+                    0.00%  6.0260us         1  6.0260us  6.0260us  6.0260us  cuDeviceGetPCIBusId
+                    0.00%  5.6840us         3  1.8940us     593ns  3.9660us  cuDeviceGetCount
+                    0.00%  4.2510us         2  2.1250us     798ns  3.4530us  cuEventRecord
+                    0.00%  4.2340us         3  1.4110us     355ns  3.3370us  cuEventCreate
+                    0.00%  4.1680us         2  2.0840us  1.5940us  2.5740us  cuPointerGetAttributes
+                    0.00%  4.1530us         4  1.0380us     667ns  1.2220us  cuDeviceGetAttribute
+                    0.00%  3.2450us         1  3.2450us  3.2450us  3.2450us  cuDriverGetVersion
+                    0.00%  3.1970us         2  1.5980us  1.1330us  2.0640us  cuDeviceGet
+                    0.00%  2.6900us         2  1.3450us     996ns  1.6940us  cuEventSynchronize
+                    0.00%  1.7130us         1  1.7130us  1.7130us  1.7130us  cuModuleGetFunction
+                    0.00%  1.0830us         1  1.0830us  1.0830us  1.0830us  cuDeviceComputeCapability
+                    0.00%     995ns         1     995ns     995ns     995ns  cuCtxGetCurrent
+ OpenACC (excl):   99.94%  35.0003s         2  17.5001s  320.51us  35.0000s  acc_wait@gol.f90:23
+                    0.05%  16.515ms         1  16.515ms  16.515ms  16.515ms  acc_enter_data@gol.f90:23
+                    0.01%  2.0530ms         1  2.0530ms  2.0530ms  2.0530ms  acc_device_init@gol.f90:23
+                    0.00%  1.1723ms         1  1.1723ms  1.1723ms  1.1723ms  acc_wait@gol.f90:50
+                    0.00%  160.40us         1  160.40us  160.40us  160.40us  acc_enqueue_launch@gol.f90:23 (gol_23_gpu)
+                    0.00%  59.909us         2  29.954us  6.7860us  53.123us  acc_enqueue_download@gol.f90:50
+                    0.00%  47.939us         1  47.939us  47.939us  47.939us  acc_exit_data@gol.f90:23
+                    0.00%  39.091us         2  19.545us  10.108us  28.983us  acc_enqueue_upload@gol.f90:23
+                    0.00%  11.572us         1  11.572us  11.572us  11.572us  acc_compute_construct@gol.f90:23
+                    0.00%       0ns         2       0ns       0ns       0ns  acc_create@gol.f90:23
+                    0.00%       0ns         2       0ns       0ns       0ns  acc_delete@gol.f90:50
+                    0.00%       0ns         2       0ns       0ns       0ns  acc_alloc@gol.f90:23
+
+======== CPU profiling result (bottom up):
+Time(%)      Time  Name
+ 74.95%  106.011s  ???
+ 74.95%  106.011s  | start_thread
+ 74.95%  106.011s  |   clone
+ 24.80%  35.0731s  cuStreamSynchronize
+ 24.80%  35.0731s  | __pgi_uacc_cuda_wait
+ 24.80%  35.0731s  |   __pgi_uacc_computedone2
+ 24.80%  35.0731s  |     __pgi_uacc_computedone
+ 24.80%  35.0731s  |       MAIN_
+ 24.80%  35.0731s  |         main
+ 24.80%  35.0731s  |           ???
+  0.11%  150.31ms  cuDevicePrimaryCtxRetain
+  0.11%  150.31ms  | __pgi_uacc_cuda_init_device
+  0.11%  150.31ms  |   __pgi_uacc_cuda_select_valid
+  0.11%  150.31ms  |     __pgi_uacc_select_devid
+  0.11%  150.31ms  |       __pgi_uacc_enter
+  0.11%  150.31ms  |         MAIN_
+  0.11%  150.31ms  |           main
+  0.11%  150.31ms  |             ???
+  0.05%  70.146ms  cuInit
+  0.05%  70.146ms  | __pgi_uacc_cuda_init
+  0.05%  70.146ms  |   __pgi_uacc_enumerate
+  0.05%  70.146ms  |     __pgi_uacc_initialize
+  0.05%  70.146ms  |       __pgi_uacc_enter
+  0.05%  70.146ms  |         MAIN_
+  0.05%  70.146ms  |           main
+  0.05%  70.146ms  |             ???
+  0.04%  50.104ms  cuDevicePrimaryCtxRelease
+  0.04%  50.104ms  | __pgi_uacc_cuda_release_buffer
+  0.04%  50.104ms  |   __run_exit_handlers
+  0.04%  50.104ms  |     ???
+  0.04%  50.104ms  |       main
+  0.04%  50.104ms  |         ???
+  0.01%  20.042ms  __kmp_release_queuing_lock
+  0.01%  20.042ms  | _mp_v
+  0.01%  20.042ms  |   gol_fill_world
+  0.01%  20.042ms  |     MAIN_
+  0.01%  20.042ms  |       main
+  0.01%  20.042ms  |         ???
+  0.01%  20.042ms  __kmp_acquire_queuing_lock
+  0.01%  20.042ms  | __kmpc_critical_with_hint
+  0.01%  20.042ms  |   _mp_p
+  0.01%  20.042ms  |     pghpf_rnumd_i8
+  0.01%  20.042ms  |       gol_fill_world
+  0.01%  20.042ms  |         MAIN_
+  0.01%  20.042ms  |           main
+  0.01%  20.042ms  |             ???
+  0.01%  10.021ms  __tls_get_addr
+  0.01%  10.021ms  | __kmp_get_global_thread_id_reg
+  0.01%  10.021ms  |   _mp_p
+  0.01%  10.021ms  |     pghpf_rnumd_i8
+  0.01%  10.021ms  |       gol_fill_world
+  0.01%  10.021ms  |         MAIN_
+  0.01%  10.021ms  |           main
+  0.01%  10.021ms  |             ???
+  0.01%  10.021ms  cuMemFreeHost
+  0.01%  10.021ms  | __pgi_uacc_cuda_free_device_buffers
+  0.01%  10.021ms  |   __pgi_uacc_cuda_release_buffer
+  0.01%  10.021ms  |     __run_exit_handlers
+  0.01%  10.021ms  |       ???
+  0.01%  10.021ms  |         main
+  0.01%  10.021ms  |           ???
+  0.01%  10.021ms  cuMemHostAlloc
+  0.01%  10.021ms  | __pgi_uacc_cuda_get_buffer
+  0.01%  10.021ms  |   __pgi_uacc_cuda_dataup1
+  0.01%  10.021ms  |     __pgi_uacc_dataup1
+  0.01%  10.021ms  |       __pgi_uacc_dataupx
+  0.01%  10.021ms  |         __pgi_uacc_dataonb
+  0.01%  10.021ms  |           MAIN_
+  0.01%  10.021ms  |             main
+  0.01%  10.021ms  |               ???
+  0.01%  10.021ms  gol_fill_world
+  0.01%  10.021ms  | MAIN_
+  0.01%  10.021ms  |   main
+  0.01%  10.021ms  |     ???
+  0.01%  10.021ms  cuModuleLoadDataEx
+  0.01%  10.021ms    __pgi_uacc_cuda_load_this_module
+  0.01%  10.021ms      __pgi_uacc_cuda_load_module
+  0.01%  10.021ms        __pgi_uacc_init_device
+  0.01%  10.021ms          __pgi_uacc_enter
+  0.01%  10.021ms            MAIN_
+  0.01%  10.021ms              main
+  0.01%  10.021ms                ???
+
+======== Data collected at 100Hz frequency

@@ -1,0 +1,8 @@
+PGF90-S-0155-Procedures called in a compute region must have &
+             acc routine information: fill (routine-wrong.f90: 25)
+PGF90-S-0155-Accelerator region ignored;                     &
+             see -Minfo messages  (routine-wrong.f90: 22)
+routine:
+22, Accelerator region ignored
+25, Accelerator restriction: call to 'fill' with no acc routine information
+0 inform,   0 warnings,   2 severes, 0 fatal for routine

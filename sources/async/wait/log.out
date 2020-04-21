@@ -1,0 +1,30 @@
+
+Accelerator Kernel Timing data
+    Timing may be affected by asynchronous behavior
+    set PGI_ACC_SYNCHRONOUS to 1 to disable async() clauses
+/home/cjunqueira/Documents/boulot/trainning/idris/openacc/examples/async/wait/wait.f90
+  async  NVIDIA  devicenum=0
+    time(us): 25
+    27: data region reached 1 time
+    34: compute region reached 1 time
+        34: kernel launched 1 time
+            grid: [79]  block: [128]
+             device time(us): total=4 max=4 min=4 avg=4
+            elapsed time(us): total=371 max=371 min=371 avg=371
+    34: data region reached 2 times
+    40: update directive reached 1 time
+        40: data copyin transfers: 1
+             device time(us): total=15 max=15 min=15 avg=15
+    42: compute region reached 1 time
+        42: kernel launched 1 time
+            grid: [79]  block: [128]
+             device time(us): total=3 max=3 min=3 avg=3
+            elapsed time(us): total=33 max=33 min=33 avg=33
+    42: data region reached 2 times
+    47: compute region reached 1 time
+        47: kernel launched 1 time
+            grid: [79]  block: [128]
+             device time(us): total=3 max=3 min=3 avg=3
+            elapsed time(us): total=19 max=19 min=19 avg=19
+    47: data region reached 2 times
+    52: data region reached 1 time

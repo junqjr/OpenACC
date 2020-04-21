@@ -1,0 +1,17 @@
+gol:
+23, Generating Tesla code
+    24, !$acc loop seq
+    26, !$acc loop gang, vector(128) ! blockidx%x threadidx%x
+    27, !$acc loop seq
+    31, !$acc loop seq
+    32, !$acc loop seq
+    44, !$acc loop seq
+    45, !$acc loop seq
+23, Generating implicit copy(old_world(:,:),world(:,:)) [if not already present]
+24, Loop carried dependence due to exposed use of world(:,:) prevents parallelization
+    Parallelization would require privatization of array old_world(i2+1,:)
+27, Loop is parallelizable
+31, Loop is parallelizable
+32, Loop is parallelizable
+44, Loop is parallelizable
+45, Loop is parallelizable

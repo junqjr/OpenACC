@@ -1,0 +1,20 @@
+    10000.00    
+
+Accelerator Kernel Timing data
+/home/cjunqueira/Documents/boulot/trainning/idris/openacc/examples/reduction/pb_sync/pb-sync.f90
+  reduction  NVIDIA  devicenum=0
+    time(us): 44
+    21: compute region reached 1 time
+        21: kernel launched 1 time
+            grid: [79]  block: [128]
+             device time(us): total=6 max=6 min=6 avg=6
+            elapsed time(us): total=362 max=362 min=362 avg=362
+        21: reduction kernel launched 1 time
+            grid: [1]  block: [256]
+             device time(us): total=4 max=4 min=4 avg=4
+            elapsed time(us): total=19 max=19 min=19 avg=19
+    21: data region reached 2 times
+        21: data copyin transfers: 1
+             device time(us): total=7 max=7 min=7 avg=7
+        30: data copyout transfers: 2
+             device time(us): total=27 max=22 min=5 avg=13

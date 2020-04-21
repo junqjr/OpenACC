@@ -1,0 +1,25 @@
+main:
+     23, Generating copy(a) [if not already present]
+         Generating Tesla code
+         31, #pragma acc loop gang /* blockIdx.x */
+         33, #pragma acc loop worker(4), vector(32) /* threadIdx.y threadIdx.
+     33, Loop is parallelizable
+     34, Generating copy(a) [if not already present]
+         Generating Tesla code
+         37, #pragma acc loop gang /* blockIdx.x */
+         39, #pragma acc loop worker(4), vector(32) /* threadIdx.y threadIdx.
+     39, Loop is parallelizable
+std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>>::operator [](unsigned long):
+     18, include "vector"
+          57, include "vector"
+                7, include "stl_vector.h"
+                   771, Generating implicit acc routine seq
+                        Generating acc routine seq
+                        Generating Tesla code
+std::vector<int, std::allocator<int>>::operator [](unsigned long):
+     18, include "vector"
+          57, include "vector"
+                7, include "stl_vector.h"
+                   771, Generating implicit acc routine seq
+                        Generating acc routine seq
+                        Generating Tesla code

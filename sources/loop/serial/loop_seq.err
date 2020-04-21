@@ -1,0 +1,13 @@
+
+Accelerator Kernel Timing data
+/home/cjunqueira/Documents/boulot/trainning/idris/openacc/examples/loop/serial/loop_serial.f90
+  loop  NVIDIA  devicenum=0
+    time(us): 78
+    38: compute region reached 1 time
+        38: kernel launched 1 time
+            grid: [1]  block: [1]
+             device time(us): total=56 max=56 min=56 avg=56
+            elapsed time(us): total=354 max=354 min=354 avg=354
+    38: data region reached 2 times
+        42: data copyout transfers: 1
+             device time(us): total=22 max=22 min=22 avg=22

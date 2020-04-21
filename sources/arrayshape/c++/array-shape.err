@@ -1,0 +1,33 @@
+
+Accelerator Kernel Timing data
+/home/cjunqueira/Documents/boulot/trainning/idris/openacc/examples/arrayshape/c++/array-shape.cpp
+  main  NVIDIA  devicenum=0
+    time(us): 298,206
+    26: compute region reached 1 time
+        26: kernel launched 1 time
+            grid: [10000]  block: [32x4]
+             device time(us): total=4,049 max=4,049 min=4,049 avg=4,049
+            elapsed time(us): total=4,079 max=4,079 min=4,079 avg=4,079
+    26: data region reached 2 times
+        26: data copyin transfers: 10000
+             device time(us): total=71,909 max=22 min=5 avg=7
+        34: kernel launched 10000 times
+            grid: [1]  block: [128]
+             device time(us): total=20,257 max=16 min=1 avg=2
+            elapsed time(us): total=170,247 max=362 min=12 avg=17
+        34: data copyout transfers: 10000
+             device time(us): total=86,999 max=34 min=6 avg=8
+    34: compute region reached 1 time
+        34: kernel launched 1 time
+            grid: [10000]  block: [32x4]
+             device time(us): total=79 max=79 min=79 avg=79
+            elapsed time(us): total=112 max=112 min=112 avg=112
+    34: data region reached 2 times
+        34: data copyin transfers: 10000
+             device time(us): total=42,530 max=26 min=2 avg=4
+        34: kernel launched 10000 times
+            grid: [1]  block: [128]
+             device time(us): total=20,346 max=16 min=1 avg=2
+            elapsed time(us): total=164,617 max=336 min=12 avg=16
+        40: data copyout transfers: 10000
+             device time(us): total=52,037 max=629 min=2 avg=5

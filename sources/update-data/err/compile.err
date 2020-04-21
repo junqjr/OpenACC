@@ -1,0 +1,10 @@
+para:
+29, Generating copyout(a(:s)) [if not already present]
+30, Generating Tesla code
+    31, !$acc loop gang, vector(128) ! blockidx%x threadidx%x
+37, Generating copyout(a(:)) [if not already present]
+    Generating copyin(rng) [if not already present]
+    Generating Tesla code
+    39, !$acc loop gang, vector(128) ! blockidx%x threadidx%x
+46, Accelerator serial kernel generated
+    Generating Tesla code

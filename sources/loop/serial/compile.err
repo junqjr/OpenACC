@@ -1,0 +1,5 @@
+loop:
+38, Accelerator serial kernel generated
+    Generating Tesla code
+    39, !$acc do seq
+38, Generating implicit copyout(a(:)) [if not already present]

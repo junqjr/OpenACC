@@ -1,0 +1,23 @@
+para  NVIDIA  devicenum=0
+time(us): 497
+29: data region reached 2 times
+ 50: data copyout transfers: 1
+  device time(us): total=22 max=22 min=22 avg=22
+30: compute region reached 1 time
+ 30: kernel launched 1 time
+  grid: [79]  block: [128]
+   device time(us): total=4 max=4 min=4 avg=4
+  elapsed time(us): total=362 max=362 min=362 avg=362
+37: compute region reached 42 times
+ 37: kernel launched 42 times
+  grid: [79]  block: [128]
+   device time(us): total=86 max=3 min=2 avg=2
+  elapsed time(us): total=738 max=27 min=15 avg=17
+37: data region reached 84 times
+ 37: data copyin transfers: 42
+  device time(us): total=383 max=10 min=8 avg=9
+46: compute region reached 1 time
+ 46: kernel launched 1 time
+  grid: [1]  block: [1]
+   device time(us): total=2 max=2 min=2 avg=2
+  elapsed time(us): total=17 max=17 min=17 avg=17

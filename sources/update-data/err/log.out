@@ -1,0 +1,28 @@
+ before end data            0
+ after end data           42
+
+Accelerator Kernel Timing data
+/home/cjunqueira/Documents/boulot/trainning/idris/openacc/examples/update-data/err/update-err.f90
+  para  NVIDIA  devicenum=0
+    time(us): 494
+    30: data region reached 2 times
+        54: data copyout transfers: 1
+             device time(us): total=23 max=23 min=23 avg=23
+    31: compute region reached 1 time
+        31: kernel launched 1 time
+            grid: [79]  block: [128]
+             device time(us): total=4 max=4 min=4 avg=4
+            elapsed time(us): total=364 max=364 min=364 avg=364
+    39: compute region reached 42 times
+        39: kernel launched 42 times
+            grid: [79]  block: [128]
+             device time(us): total=85 max=3 min=2 avg=2
+            elapsed time(us): total=714 max=23 min=16 avg=17
+    39: data region reached 84 times
+        39: data copyin transfers: 42
+             device time(us): total=380 max=10 min=8 avg=9
+    48: compute region reached 1 time
+        48: kernel launched 1 time
+            grid: [1]  block: [1]
+             device time(us): total=2 max=2 min=2 avg=2
+            elapsed time(us): total=18 max=18 min=18 avg=18

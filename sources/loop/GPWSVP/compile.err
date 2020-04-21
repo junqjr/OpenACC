@@ -1,0 +1,4 @@
+loop:
+40, Generating Tesla code
+    42, !$acc loop gang(10), vector(128) ! blockidx%x threadidx%x
+40, Generating implicit copyout(a(:)) [if not already present]

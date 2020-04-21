@@ -1,0 +1,13 @@
+
+Accelerator Kernel Timing data
+/home/cjunqueira/Documents/boulot/trainning/idris/openacc/examples/loop_coalescing/nocoalescing/loop_nocoalescing.f90
+  loop  NVIDIA  devicenum=0
+    time(us): 125,843
+    21: compute region reached 1 time
+        21: kernel launched 1 time
+            grid: [10000]  block: [128]
+             device time(us): total=93,246 max=93,246 min=93,246 avg=93,246
+            elapsed time(us): total=93,288 max=93,288 min=93,288 avg=93,288
+    21: data region reached 2 times
+        29: data copyout transfers: 24
+             device time(us): total=32,597 max=1,574 min=1,320 avg=1,358

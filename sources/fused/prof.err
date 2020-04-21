@@ -1,0 +1,129 @@
+==27010== PGPROF is profiling process 27010, command: ./fused.exec
+==27010== Profiling application: ./fused.exec
+==27010== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   50.50%  27.552us         7  3.9360us  1.6000us  5.3760us  [CUDA memcpy DtoH]
+                   24.63%  13.440us         4  3.3600us  1.2160us  5.5040us  [CUDA memcpy HtoD]
+                    6.16%  3.3600us         1  3.3600us  3.3600us  3.3600us  fused_19_gpu
+                    5.16%  2.8160us         1  2.8160us  2.8160us  2.8160us  fused_27_gpu
+                    4.75%  2.5920us         1  2.5920us  2.5920us  2.5920us  fused_33_gpu
+                    4.69%  2.5600us         1  2.5600us  2.5600us  2.5600us  fused_29_gpu__red
+                    4.11%  2.2400us         1  2.2400us  2.2400us  2.2400us  fused_35_gpu__red
+      API calls:   65.28%  139.84ms         1  139.84ms  139.84ms  139.84ms  cuDevicePrimaryCtxRetain
+                   22.97%  49.216ms         1  49.216ms  49.216ms  49.216ms  cuDevicePrimaryCtxRelease
+                    6.97%  14.921ms         1  14.921ms  14.921ms  14.921ms  cuMemHostAlloc
+                    4.24%  9.0827ms         1  9.0827ms  9.0827ms  9.0827ms  cuMemFreeHost
+                    0.27%  577.36us         1  577.36us  577.36us  577.36us  cuMemAllocHost
+                    0.10%  210.04us         1  210.04us  210.04us  210.04us  cuModuleLoadDataEx
+                    0.05%  110.06us         6  18.343us  2.4010us  90.327us  cuMemAlloc
+                    0.03%  66.292us        10  6.6290us     495ns  12.843us  cuStreamSynchronize
+                    0.03%  66.122us         7  9.4460us  2.5830us  19.797us  cuMemcpyDtoHAsync
+                    0.03%  57.340us         5  11.468us  4.3120us  24.186us  cuLaunchKernel
+                    0.01%  19.430us         4  4.8570us  2.8480us  7.6540us  cuMemcpyHtoDAsync
+                    0.00%  8.4600us         1  8.4600us  8.4600us  8.4600us  cuStreamCreate
+                    0.00%  7.2780us         5  1.4550us     729ns  3.4950us  cuEventRecord
+                    0.00%  6.4590us         3  2.1530us     197ns  5.7740us  cuCtxSetCurrent
+                    0.00%  6.4550us         1  6.4550us  6.4550us  6.4550us  cuDeviceGetPCIBusId
+                    0.00%  5.4080us         3  1.8020us     539ns  4.0630us  cuDeviceGetCount
+                    0.00%  4.2520us         4  1.0630us     303ns  3.1210us  cuEventCreate
+                    0.00%  3.8050us         4     951ns     708ns  1.3480us  cuDeviceGetAttribute
+                    0.00%  3.3130us         5     662ns     551ns     837ns  cuEventSynchronize
+                    0.00%  2.8390us         3     946ns     395ns  2.0190us  cuPointerGetAttributes
+                    0.00%  2.6880us         2  1.3440us     529ns  2.1590us  cuDeviceGet
+                    0.00%  2.4200us         5     484ns     144ns  1.7260us  cuModuleGetFunction
+                    0.00%  1.0780us         1  1.0780us  1.0780us  1.0780us  cuCtxGetCurrent
+                    0.00%     875ns         1     875ns     875ns     875ns  cuDeviceComputeCapability
+                    0.00%     857ns         1     857ns     857ns     857ns  cuDriverGetVersion
+ OpenACC (excl):   95.60%  14.958ms         1  14.958ms  14.958ms  14.958ms  acc_exit_data@fused.f90:18
+                    1.52%  237.86us         1  237.86us  237.86us  237.86us  acc_device_init@fused.f90:18
+                    0.42%  65.192us         1  65.192us  65.192us  65.192us  acc_enter_data@fused.f90:18
+                    0.41%  64.558us         1  64.558us  64.558us  64.558us  acc_wait@fused.f90:24
+                    0.34%  53.129us         3  17.709us  4.4860us  41.982us  acc_enqueue_download@fused.f90:24
+                    0.18%  27.753us         1  27.753us  27.753us  27.753us  acc_enqueue_launch@fused.f90:19 (fused_19_gpu)
+                    0.15%  23.051us         1  23.051us  23.051us  23.051us  acc_compute_construct@fused.f90:25
+                    0.13%  19.997us         1  19.997us  19.997us  19.997us  acc_enqueue_download@fused.f90:27
+                    0.13%  19.608us         1  19.608us  19.608us  19.608us  acc_enqueue_launch@fused.f90:27 (fused_27_gpu)
+                    0.11%  16.466us         1  16.466us  16.466us  16.466us  acc_enter_data@fused.f90:25
+                    0.09%  14.638us         1  14.638us  14.638us  14.638us  acc_wait@fused.f90:37
+                    0.09%  14.563us         1  14.563us  14.563us  14.563us  acc_enqueue_download@fused.f90:33
+                    0.09%  14.132us         1  14.132us  14.132us  14.132us  acc_wait@fused.f90:31
+                    0.09%  13.855us         2  6.9270us  5.2840us  8.5710us  acc_enqueue_upload@fused.f90:25
+                    0.08%  11.954us         1  11.954us  11.954us  11.954us  acc_wait@fused.f90:25
+                    0.07%  10.880us         1  10.880us  10.880us  10.880us  acc_wait@fused.f90:32
+                    0.06%  9.9190us         1  9.9190us  9.9190us  9.9190us  acc_compute_construct@fused.f90:18
+                    0.06%  9.6490us         1  9.6490us  9.6490us  9.6490us  acc_wait@fused.f90:19
+                    0.05%  8.5130us         2  4.2560us  3.3970us  5.1160us  acc_enqueue_upload@fused.f90:32
+                    0.05%  8.3270us         1  8.3270us  8.3270us  8.3270us  acc_enqueue_launch@fused.f90:33 (fused_33_gpu)
+                    0.04%  6.7850us         1  6.7850us  6.7850us  6.7850us  acc_enter_data@fused.f90:32
+                    0.04%  6.1040us         1  6.1040us  6.1040us  6.1040us  acc_enqueue_launch@fused.f90:27 (fused_29_gpu__red)
+                    0.04%  5.6870us         1  5.6870us  5.6870us  5.6870us  acc_enqueue_download@fused.f90:31
+                    0.03%  5.2560us         1  5.2560us  5.2560us  5.2560us  acc_enqueue_launch@fused.f90:33 (fused_35_gpu__red)
+                    0.03%  4.6600us         1  4.6600us  4.6600us  4.6600us  acc_enqueue_download@fused.f90:37
+                    0.03%  3.9320us         1  3.9320us  3.9320us  3.9320us  acc_exit_data@fused.f90:25
+                    0.02%  3.2260us         1  3.2260us  3.2260us  3.2260us  acc_exit_data@fused.f90:32
+                    0.02%  3.0810us         1  3.0810us  3.0810us  3.0810us  acc_compute_construct@fused.f90:32
+                    0.02%  2.6850us         2  1.3420us  1.0730us  1.6120us  acc_wait@fused.f90:27
+                    0.02%  2.3950us         2  1.1970us  1.0380us  1.3570us  acc_wait@fused.f90:33
+                    0.00%       0ns         3       0ns       0ns       0ns  acc_delete@fused.f90:24
+                    0.00%       0ns         2       0ns       0ns       0ns  acc_create@fused.f90:25
+                    0.00%       0ns         3       0ns       0ns       0ns  acc_alloc@fused.f90:18
+                    0.00%       0ns         2       0ns       0ns       0ns  acc_delete@fused.f90:31
+                    0.00%       0ns         2       0ns       0ns       0ns  acc_delete@fused.f90:37
+                    0.00%       0ns         2       0ns       0ns       0ns  acc_create@fused.f90:32
+                    0.00%       0ns         3       0ns       0ns       0ns  acc_create@fused.f90:18
+
+======== CPU profiling result (bottom up):
+Time(%)      Time  Name
+ 75.68%  884.25ms  ???
+ 75.68%  884.25ms  | start_thread
+ 75.68%  884.25ms  |   clone
+ 12.61%  147.37ms  cuDevicePrimaryCtxRetain
+ 12.61%  147.37ms  | __pgi_uacc_cuda_init_device
+ 12.61%  147.37ms  |   __pgi_uacc_cuda_select_valid
+ 12.61%  147.37ms  |     __pgi_uacc_select_devid
+ 12.61%  147.37ms  |       __pgi_uacc_enter
+ 12.61%  147.37ms  |         MAIN_
+ 12.61%  147.37ms  |           main
+ 12.61%  147.37ms  |             ???
+  4.50%  52.634ms  cuDevicePrimaryCtxRelease
+  4.50%  52.634ms  | __pgi_uacc_cuda_release_buffer
+  4.50%  52.634ms  |   __run_exit_handlers
+  4.50%  52.634ms  |     ???
+  4.50%  52.634ms  |       main
+  4.50%  52.634ms  |         ???
+  4.50%  52.634ms  cuInit
+  4.50%  52.634ms  | __pgi_uacc_cuda_init
+  4.50%  52.634ms  |   __pgi_uacc_enumerate
+  4.50%  52.634ms  |     __pgi_uacc_initialize
+  4.50%  52.634ms  |       __pgi_uacc_enter
+  4.50%  52.634ms  |         MAIN_
+  4.50%  52.634ms  |           main
+  4.50%  52.634ms  |             ???
+  0.90%  10.527ms  cuMemHostAlloc
+  0.90%  10.527ms  | __pgi_uacc_cuda_get_buffer
+  0.90%  10.527ms  |   __pgi_uacc_cuda_datadown1
+  0.90%  10.527ms  |     __pgi_uacc_datadown1
+  0.90%  10.527ms  |       __pgi_uacc_datadownx
+  0.90%  10.527ms  |         __pgi_uacc_dataoffb2
+  0.90%  10.527ms  |           MAIN_
+  0.90%  10.527ms  |             main
+  0.90%  10.527ms  |               ???
+  0.90%  10.527ms  do_lookup_x
+  0.90%  10.527ms  | _dl_lookup_symbol_x
+  0.90%  10.527ms  |   _dl_fixup
+  0.90%  10.527ms  |     _dl_runtime_resolve_xsavec
+  0.90%  10.527ms  |       __pgi_uacc_enumerate
+  0.90%  10.527ms  |         __pgi_uacc_initialize
+  0.90%  10.527ms  |           __pgi_uacc_enter
+  0.90%  10.527ms  |             MAIN_
+  0.90%  10.527ms  |               main
+  0.90%  10.527ms  |                 ???
+  0.90%  10.527ms  cuMemFreeHost
+  0.90%  10.527ms    __pgi_uacc_cuda_free_device_buffers
+  0.90%  10.527ms      __pgi_uacc_cuda_release_buffer
+  0.90%  10.527ms        __run_exit_handlers
+  0.90%  10.527ms          ???
+  0.90%  10.527ms            main
+  0.90%  10.527ms              ???
+
+======== Data collected at 100Hz frequency
