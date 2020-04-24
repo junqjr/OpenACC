@@ -1,0 +1,174 @@
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 1563854 exp: 2188972
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 1431287 exp: 2027924
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 1443694 exp: 2002694
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 1359424 exp: 1905794
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 1305615 exp: 1855750
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 1261383 exp: 1790377
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 1245216 exp: 1740619
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 1192749 exp: 1690171
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 1138161 exp: 1646350
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 1147040 exp: 1604640
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 1117824 exp: 1565378
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 1091018 exp: 1528509
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 1080759 exp: 1495977
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 1068474 exp: 1463771
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 995763 exp: 1431627
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 1034092 exp: 1407221
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 982561 exp: 1381093
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 974871 exp: 1357164
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 939807 exp: 1332417
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 951081 exp: 1310157
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 906671 exp: 1292110
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 862765 exp: 1272744
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 900968 exp: 1253192
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 868680 exp: 1234462
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 851407 exp: 1217901
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 843052 exp: 1201320
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 834311 exp: 1187955
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 826696 exp: 1169869
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 819866 exp: 1156685
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 800198 exp: 1144470
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 790282 exp: 1132434
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 782621 exp: 1118911
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 791177 exp: 1108014
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 769206 exp: 1098229
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 779355 exp: 1086483
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 762063 exp: 1073255
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 737388 exp: 1063454
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 743809 exp: 1053380
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 709156 exp: 1045332
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 730343 exp: 1037997
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 725842 exp: 1030273
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 714206 exp: 1022848
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 707187 exp: 1012624
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 706973 exp: 1005755
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 700144 exp: 997185
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 698489 exp: 988790
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 710752 exp: 981380
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 688875 exp: 974253
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 676347 exp: 967943
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:59
+	idx: 0 FAIL act: 672608 exp: 959634
+PCAST Int world in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90:62
+	idx: 135031 FAIL act: 1 exp: 0
+	idx: 143035 FAIL act: 1 exp: 0
+	idx: 147036 FAIL act: 1 exp: 0
+	idx: 147037 FAIL act: 1 exp: 0
+	idx: 147039 FAIL act: 0 exp: 1
+	idx: 147042 FAIL act: 0 exp: 1
+	idx: 147043 FAIL act: 0 exp: 1
+	idx: 151033 FAIL act: 0 exp: 1
+	idx: 151039 FAIL act: 1 exp: 0
+	idx: 151041 FAIL act: 0 exp: 1
+	idx: 151042 FAIL act: 0 exp: 1
+	idx: 151043 FAIL act: 0 exp: 1
+	idx: 151044 FAIL act: 1 exp: 0
+	idx: 151138 FAIL act: 1 exp: 0
+	idx: 152991 FAIL act: 1 exp: 0
+	idx: 152992 FAIL act: 1 exp: 0
+	idx: 152994 FAIL act: 0 exp: 1
+	idx: 152995 FAIL act: 0 exp: 1
+	idx: 154538 FAIL act: 0 exp: 1
+	idx: 154540 FAIL act: 0 exp: 1
+	idx: 154541 FAIL act: 1 exp: 0
+	idx: 155034 FAIL act: 0 exp: 1
+	idx: 155036 FAIL act: 0 exp: 1
+	idx: 155038 FAIL act: 0 exp: 1
+	idx: 155040 FAIL act: 1 exp: 0
+	idx: 155041 FAIL act: 0 exp: 1
+	idx: 155045 FAIL act: 0 exp: 1
+	idx: 155046 FAIL act: 0 exp: 1
+	idx: 155139 FAIL act: 0 exp: 1
+	idx: 155140 FAIL act: 1 exp: 0
+	idx: 155141 FAIL act: 1 exp: 0
+	idx: 155142 FAIL act: 1 exp: 0
+	idx: 156992 FAIL act: 1 exp: 0
+	idx: 156993 FAIL act: 1 exp: 0
+	idx: 156994 FAIL act: 1 exp: 0
+	idx: 156997 FAIL act: 1 exp: 0
+	idx: 157497 FAIL act: 0 exp: 1
+	idx: 158536 FAIL act: 0 exp: 1
+	idx: 158539 FAIL act: 0 exp: 1
+	idx: 158540 FAIL act: 0 exp: 1
+	idx: 158541 FAIL act: 0 exp: 1
+	idx: 158542 FAIL act: 1 exp: 0
+	idx: 158860 FAIL act: 1 exp: 0
+	idx: 158861 FAIL act: 1 exp: 0
+	idx: 159038 FAIL act: 0 exp: 1
+	idx: 159044 FAIL act: 1 exp: 0
+	idx: 159047 FAIL act: 0 exp: 1
+	idx: 159048 FAIL act: 0 exp: 1
+	idx: 159143 FAIL act: 1 exp: 0
+	idx: 159144 FAIL act: 1 exp: 0
+compared 51 blocks, 8012054 elements, 32048216 bytes
+48308 errors found in 51 blocks
+ absolute tolerance = 0.00000000000000000e+00, abs=0
+
+Accelerator Kernel Timing data
+/home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-11/gol.f90
+  gol  NVIDIA  devicenum=0
+    time(us): 121,749
+    26: data region reached 2 times
+        26: data copyin transfers: 4
+             device time(us): total=2,471 max=1,278 min=4 avg=617
+        62: data copyout transfers: 2
+             device time(us): total=2,525 max=1,321 min=1,204 avg=1,262
+    30: compute region reached 50 times
+        30: kernel launched 50 times
+            grid: [2000]  block: [128]
+             device time(us): total=115,851 max=2,398 min=2,261 avg=2,317
+            elapsed time(us): total=117,247 max=2,439 min=2,289 avg=2,344
+    30: data region reached 100 times
+        30: data copyin transfers: 50
+             device time(us): total=351 max=26 min=5 avg=7
+        59: data copyout transfers: 50
+             device time(us): total=551 max=19 min=4 avg=11

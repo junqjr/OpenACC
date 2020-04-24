@@ -1,0 +1,42 @@
+
+Accelerator Kernel Timing data
+/home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-3/gol.f90
+  gol  NVIDIA  devicenum=0
+    time(us): 76,131,242
+    27: compute region reached 50 times
+        27: kernel launched 50 times
+            grid: [1]  block: [1]
+             device time(us): total=24,040,550 max=554,259 min=475,706 avg=480,811
+            elapsed time(us): total=24,042,408 max=554,314 min=475,740 avg=480,848
+    27: data region reached 100 times
+        27: data copyin transfers: 100
+             device time(us): total=123,469 max=1,388 min=1,162 avg=1,234
+        33: data copyout transfers: 100
+             device time(us): total=127,652 max=1,465 min=1,202 avg=1,276
+    34: compute region reached 50 times
+        34: kernel launched 50 times
+            grid: [1]  block: [1]
+             device time(us): total=43,810,816 max=881,837 min=858,809 avg=876,216
+            elapsed time(us): total=43,812,794 max=881,876 min=858,845 avg=876,255
+    34: data region reached 100 times
+        34: data copyin transfers: 200
+             device time(us): total=246,924 max=1,497 min=1,162 avg=1,234
+        47: data copyout transfers: 100
+             device time(us): total=128,736 max=1,759 min=1,204 avg=1,287
+    49: compute region reached 50 times
+        49: data copyin transfers: 50
+             device time(us): total=396 max=35 min=7 avg=7
+        49: kernel launched 50 times
+            grid: [1]  block: [1]
+             device time(us): total=7,528,219 max=152,493 min=149,245 avg=150,564
+            elapsed time(us): total=7,529,896 max=152,531 min=149,279 avg=150,597
+        49: reduction kernel launched 50 times
+            grid: [1]  block: [256]
+             device time(us): total=148 max=3 min=2 avg=2
+            elapsed time(us): total=2,029 max=75 min=23 avg=40
+    49: data region reached 100 times
+        49: data copyin transfers: 100
+             device time(us): total=123,516 max=1,471 min=1,164 avg=1,235
+    55: download reached 50 times
+        55: data copyout transfers: 50
+             device time(us): total=816 max=23 min=8 avg=16

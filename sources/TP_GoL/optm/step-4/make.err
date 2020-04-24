@@ -1,0 +1,16 @@
+gol:
+     28, Generating Tesla code
+         30, !$acc loop gang, vector(128) ! blockidx%x threadidx%x
+         31, !$acc loop seq
+         36, !$acc loop gang, vector(128) ! blockidx%x threadidx%x
+         37, !$acc loop seq
+         49, !$acc loop gang, vector(128) ! blockidx%x threadidx%x
+             Generating reduction(+:cells)
+         50, !$acc loop seq
+     28, Generating copy(cells) [if not already present]
+         Generating implicit copyin(old_world(0:rows+1,0:cols+1)) [if not already present]
+         Generating implicit copyout(old_world(1:rows,1:cols)) [if not already present]
+         Generating implicit copy(world(1:rows,1:cols)) [if not already present]
+     31, Loop is parallelizable
+     37, Loop is parallelizable
+     50, Loop is parallelizable

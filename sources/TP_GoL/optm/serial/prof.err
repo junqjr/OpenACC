@@ -1,0 +1,104 @@
+
+======== CPU profiling result (bottom up):
+Time(%)      Time  Name
+ 96.59%  9.91998s  MAIN_
+ 96.59%  9.91998s  | main
+ 96.59%  9.91998s  |   ???
+  0.68%      70ms  __kmp_release_queuing_lock
+  0.68%      70ms  | _mp_v
+  0.68%      70ms  |   gol_fill_world
+  0.68%      70ms  |     MAIN_
+  0.68%      70ms  |       main
+  0.68%      70ms  |         ???
+  0.58%      60ms  __kmp_acquire_queuing_lock
+  0.58%      60ms  | __kmpc_critical_with_hint
+  0.58%      60ms  |   _mp_p
+  0.58%      60ms  |     pghpf_rnumd_i8
+  0.58%      60ms  |       gol_fill_world
+  0.58%      60ms  |         MAIN_
+  0.58%      60ms  |           main
+  0.58%      60ms  |             ???
+  0.39%      40ms  __kmpc_end_critical
+  0.39%      40ms  | _mp_v
+  0.39%      40ms  |   gol_fill_world
+  0.39%      40ms  |     MAIN_
+  0.39%      40ms  |       main
+  0.39%      40ms  |         ???
+  0.39%      40ms  _dl_update_slotinfo
+  0.39%      40ms  | update_get_addr
+  0.39%      40ms  |   __tls_get_addr
+  0.39%      40ms  |     __kmp_get_global_thread_id_reg
+  0.39%      40ms  |       _mp_v
+  0.39%      40ms  |         gol_fill_world
+  0.39%      40ms  |           MAIN_
+  0.39%      40ms  |             main
+  0.39%      40ms  |               ???
+  0.29%      30ms  pghpf_rnumd_i8
+  0.29%      30ms  | gol_fill_world
+  0.29%      30ms  |   MAIN_
+  0.29%      30ms  |     main
+  0.29%      30ms  |       ???
+  0.29%      30ms  __tls_get_addr
+  0.29%      30ms  | __kmp_get_global_thread_id_reg
+  0.19%      20ms  |   _mp_v
+  0.19%      20ms  |   | gol_fill_world
+  0.19%      20ms  |   |   MAIN_
+  0.19%      20ms  |   |     main
+  0.19%      20ms  |   |       ???
+  0.10%      10ms  |   _mp_p
+  0.10%      10ms  |     pghpf_rnumd_i8
+  0.10%      10ms  |       gol_fill_world
+  0.10%      10ms  |         MAIN_
+  0.10%      10ms  |           main
+  0.10%      10ms  |             ???
+  0.19%      20ms  update_get_addr
+  0.19%      20ms  | __tls_get_addr
+  0.19%      20ms  |   __kmp_get_global_thread_id_reg
+  0.10%      10ms  |     _mp_v
+  0.10%      10ms  |     | gol_fill_world
+  0.10%      10ms  |     |   MAIN_
+  0.10%      10ms  |     |     main
+  0.10%      10ms  |     |       ???
+  0.10%      10ms  |     _mp_p
+  0.10%      10ms  |       pghpf_rnumd_i8
+  0.10%      10ms  |         gol_fill_world
+  0.10%      10ms  |           MAIN_
+  0.10%      10ms  |             main
+  0.10%      10ms  |               ???
+  0.19%      20ms  ???
+  0.10%      10ms  | _mp_v
+  0.10%      10ms  | | gol_fill_world
+  0.10%      10ms  | |   MAIN_
+  0.10%      10ms  | |     main
+  0.10%      10ms  | |       ???
+  0.10%      10ms  | _mp_p
+  0.10%      10ms  |   pghpf_rnumd_i8
+  0.10%      10ms  |     gol_fill_world
+  0.10%      10ms  |       MAIN_
+  0.10%      10ms  |         main
+  0.10%      10ms  |           ???
+  0.10%      10ms  __kmpc_global_thread_num
+  0.10%      10ms  | _mp_v
+  0.10%      10ms  |   gol_fill_world
+  0.10%      10ms  |     MAIN_
+  0.10%      10ms  |       main
+  0.10%      10ms  |         ???
+  0.10%      10ms  __kmpc_critical_with_hint
+  0.10%      10ms  | _mp_p
+  0.10%      10ms  |   pghpf_rnumd_i8
+  0.10%      10ms  |     gol_fill_world
+  0.10%      10ms  |       MAIN_
+  0.10%      10ms  |         main
+  0.10%      10ms  |           ???
+  0.10%      10ms  __kmp_get_global_thread_id_reg
+  0.10%      10ms  | _mp_v
+  0.10%      10ms  |   gol_fill_world
+  0.10%      10ms  |     MAIN_
+  0.10%      10ms  |       main
+  0.10%      10ms  |         ???
+  0.10%      10ms  gol_fill_world
+  0.10%      10ms    MAIN_
+  0.10%      10ms      main
+  0.10%      10ms        ???
+
+======== Data collected at 100Hz frequency

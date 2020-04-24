@@ -1,0 +1,15 @@
+
+Accelerator Kernel Timing data
+/home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-1/gol.f90
+  gol  NVIDIA  devicenum=0
+    time(us): 24,307,904
+    28: compute region reached 50 times
+        28: kernel launched 50 times
+            grid: [1]  block: [1]
+             device time(us): total=24,056,960 max=545,493 min=475,765 avg=481,139
+            elapsed time(us): total=24,059,713 max=545,542 min=475,800 avg=481,194
+    28: data region reached 100 times
+        28: data copyin transfers: 100
+             device time(us): total=123,399 max=1,432 min=1,166 avg=1,233
+        34: data copyout transfers: 100
+             device time(us): total=127,545 max=1,492 min=1,200 avg=1,275

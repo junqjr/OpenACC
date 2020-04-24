@@ -1,0 +1,350 @@
+==24893== PGPROF is profiling process 24893, command: ./gol 4000 2000 50
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 692 exp: 2188972
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 642 exp: 2027924
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 673 exp: 2002694
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 619 exp: 1905794
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 539 exp: 1855750
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 572 exp: 1790377
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 570 exp: 1740619
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 520 exp: 1690171
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 489 exp: 1646350
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 483 exp: 1604640
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 481 exp: 1565378
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 460 exp: 1528509
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 453 exp: 1495977
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 484 exp: 1463771
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 451 exp: 1431627
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 419 exp: 1407221
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 393 exp: 1381093
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 443 exp: 1357164
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 400 exp: 1332417
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 390 exp: 1310157
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 389 exp: 1292110
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 383 exp: 1272744
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 366 exp: 1253192
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 356 exp: 1234462
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 338 exp: 1217901
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 349 exp: 1201320
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 358 exp: 1187955
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 345 exp: 1169869
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 381 exp: 1156685
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 305 exp: 1144470
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 345 exp: 1132434
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 337 exp: 1118911
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 357 exp: 1108014
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 352 exp: 1098229
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 338 exp: 1086483
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 335 exp: 1073255
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 340 exp: 1063454
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 283 exp: 1053380
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 335 exp: 1045332
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 332 exp: 1037997
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 310 exp: 1030273
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 319 exp: 1022848
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 310 exp: 1012624
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 350 exp: 1005755
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 326 exp: 997185
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 331 exp: 988790
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 303 exp: 981380
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 305 exp: 974253
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 289 exp: 967943
+PCAST Int cells in function gol, /home/cjunqueira/Documents/boulot/trainning/idris/openacc/ensam/sources/TP_GoL/optm/step-10/gol.f90:59
+	idx: 0 FAIL act: 343 exp: 959634
+compared 51 blocks, 8012054 elements, 32048216 bytes
+50 errors found in 50 blocks
+ absolute tolerance = 0.00000000000000000e+00, abs=0
+==24893== Profiling application: ./gol 4000 2000 50
+==24893== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   97.11%  177.23ms        50  3.5445ms  3.4880ms  3.6104ms  gol_30_gpu
+                    1.43%  2.6094ms         4  652.36us  1.4390us  1.3263ms  [CUDA memcpy HtoD]
+                    1.42%  2.5878ms        52  49.765us  1.2160us  1.3201ms  [CUDA memcpy DtoH]
+                    0.04%  68.892us        50  1.3770us  1.3440us  1.5360us  [CUDA memset]
+      API calls:   49.77%  180.85ms       152  1.1898ms  2.2250us  3.6356ms  cuStreamSynchronize
+                   29.22%  106.19ms         1  106.19ms  106.19ms  106.19ms  cuDevicePrimaryCtxRetain
+                   12.97%  47.117ms         1  47.117ms  47.117ms  47.117ms  cuDevicePrimaryCtxRelease
+                    4.04%  14.690ms         1  14.690ms  14.690ms  14.690ms  cuMemHostAlloc
+                    2.33%  8.4621ms         1  8.4621ms  8.4621ms  8.4621ms  cuMemFreeHost
+                    0.41%  1.5053ms         6  250.89us  3.8840us  1.2915ms  cuMemAlloc
+                    0.34%  1.2510ms        53  23.604us     663ns  1.2050ms  cuEventSynchronize
+                    0.30%  1.0949ms        50  21.898us  16.272us  192.38us  cuLaunchKernel
+                    0.28%  1.0221ms        52  19.655us  5.0530us  25.721us  cuMemcpyDtoHAsync
+                    0.16%  583.54us         1  583.54us  583.54us  583.54us  cuMemAllocHost
+                    0.09%  314.50us        50  6.2900us  5.2970us  15.800us  cuMemsetD32Async
+                    0.04%  146.78us        55  2.6680us     758ns  4.7750us  cuEventRecord
+                    0.02%  81.983us         1  81.983us  81.983us  81.983us  cuModuleLoadDataEx
+                    0.01%  41.101us         4  10.275us  5.3460us  20.386us  cuMemcpyHtoDAsync
+                    0.00%  8.2210us         4  2.0550us     265ns  2.9490us  cuEventCreate
+                    0.00%  8.0840us         1  8.0840us  8.0840us  8.0840us  cuStreamCreate
+                    0.00%  6.8540us         3  2.2840us     194ns  6.1220us  cuCtxSetCurrent
+                    0.00%  6.7200us         1  6.7200us  6.7200us  6.7200us  cuDeviceGetPCIBusId
+                    0.00%  5.3690us         3  1.7890us     723ns  2.7000us  cuPointerGetAttributes
+                    0.00%  1.9510us         1  1.9510us  1.9510us  1.9510us  cuModuleGetFunction
+                    0.00%  1.7700us         3     590ns      99ns  1.2400us  cuDeviceGetCount
+                    0.00%  1.6600us         4     415ns     160ns     762ns  cuDeviceGetAttribute
+                    0.00%     924ns         2     462ns     153ns     771ns  cuDeviceGet
+                    0.00%     284ns         1     284ns     284ns     284ns  cuDriverGetVersion
+                    0.00%     236ns         1     236ns     236ns     236ns  cuDeviceComputeCapability
+                    0.00%     173ns         1     173ns     173ns     173ns  cuCtxGetCurrent
+ OpenACC (excl):   64.08%  179.30ms       100  1.7930ms  7.7010us  3.6363ms  acc_wait@gol.f90:30
+                   19.82%  55.466ms        50  1.1093ms  29.503us  53.455ms  acc_exit_data@gol.f90:30
+                    6.84%  19.154ms         1  19.154ms  19.154ms  19.154ms  acc_enter_data@gol.f90:26
+                    4.80%  13.418ms         1  13.418ms  13.418ms  13.418ms  acc_exit_data@gol.f90:26
+                    3.02%  8.4394ms         1  8.4394ms  8.4394ms  8.4394ms  acc_wait@gol.f90:62
+                    0.49%  1.3839ms        50  27.678us  25.392us  35.254us  acc_enqueue_download@gol.f90:59
+                    0.44%  1.2177ms        50  24.354us  18.724us  194.97us  acc_enqueue_launch@gol.f90:30 (gol_30_gpu)
+                    0.16%  447.62us        50  8.9520us  7.2960us  10.934us  acc_wait@gol.f90:59
+                    0.13%  372.30us        50  7.4460us  6.2790us  19.797us  acc_enqueue_upload@gol.f90:30
+                    0.11%  295.76us        50  5.9150us  5.1230us  12.916us  acc_enter_data@gol.f90:30
+                    0.05%  144.72us        50  2.8940us  2.0560us  9.1060us  acc_compute_construct@gol.f90:30
+                    0.04%  110.57us         1  110.57us  110.57us  110.57us  acc_device_init@gol.f90:26
+                    0.02%  54.071us         4  13.517us  6.2280us  26.993us  acc_enqueue_upload@gol.f90:26
+                    0.01%  16.308us         2  8.1540us  7.5010us  8.8070us  acc_enqueue_download@gol.f90:62
+                    0.00%  4.5380us         1  4.5380us  4.5380us  4.5380us  acc_wait@gol.f90:26
+                    0.00%       0ns         1       0ns       0ns       0ns  acc_alloc@gol.f90:30
+                    0.00%       0ns         4       0ns       0ns       0ns  acc_create@gol.f90:26
+                    0.00%       0ns        50       0ns       0ns       0ns  acc_delete@gol.f90:59
+                    0.00%       0ns        50       0ns       0ns       0ns  acc_create@gol.f90:30
+                    0.00%       0ns         4       0ns       0ns       0ns  acc_alloc@gol.f90:26
+                    0.00%       0ns         4       0ns       0ns       0ns  acc_delete@gol.f90:62
+
+======== CPU profiling result (bottom up):
+Time(%)      Time  Name
+ 74.04%   18.161s  ???
+ 74.04%   18.161s  | start_thread
+ 74.04%   18.161s  |   clone
+ 22.81%  5.59496s  MAIN_
+ 22.81%  5.59496s  | main
+ 22.81%  5.59496s  |   ???
+  0.53%  130.58ms  cuStreamSynchronize
+  0.53%  130.58ms  | __pgi_uacc_cuda_wait
+  0.53%  130.58ms  |   __pgi_uacc_computedone2
+  0.53%  130.58ms  |     __pgi_uacc_computedone
+  0.53%  130.58ms  |       MAIN_
+  0.53%  130.58ms  |         main
+  0.53%  130.58ms  |           ???
+  0.45%  110.49ms  cuDevicePrimaryCtxRetain
+  0.45%  110.49ms  | __pgi_uacc_cuda_init_device
+  0.45%  110.49ms  |   __pgi_uacc_cuda_select_valid
+  0.45%  110.49ms  |     __pgi_uacc_select_devid
+  0.45%  110.49ms  |       __pgi_uacc_dataenterstart2
+  0.45%  110.49ms  |         MAIN_
+  0.45%  110.49ms  |           main
+  0.45%  110.49ms  |             ???
+  0.37%  90.403ms  __kmp_acquire_queuing_lock
+  0.37%  90.403ms  | __kmpc_critical_with_hint
+  0.37%  90.403ms  |   _mp_p
+  0.37%  90.403ms  |     pghpf_rnumd_i8
+  0.37%  90.403ms  |       gol_fill_world
+  0.37%  90.403ms  |         MAIN_
+  0.37%  90.403ms  |           main
+  0.37%  90.403ms  |             ???
+  0.29%  70.314ms  __kmp_release_queuing_lock
+  0.29%  70.314ms  | _mp_v
+  0.29%  70.314ms  |   gol_fill_world
+  0.29%  70.314ms  |     MAIN_
+  0.29%  70.314ms  |       main
+  0.29%  70.314ms  |         ???
+  0.25%  60.269ms  _dl_update_slotinfo
+  0.25%  60.269ms  | update_get_addr
+  0.25%  60.269ms  |   __tls_get_addr
+  0.25%  60.269ms  |     __kmp_get_global_thread_id_reg
+  0.20%  50.224ms  |       _mp_v
+  0.20%  50.224ms  |       | gol_fill_world
+  0.20%  50.224ms  |       |   MAIN_
+  0.20%  50.224ms  |       |     main
+  0.20%  50.224ms  |       |       ???
+  0.04%  10.045ms  |       _mp_p
+  0.04%  10.045ms  |         pghpf_rnumd_i8
+  0.04%  10.045ms  |           gol_fill_world
+  0.04%  10.045ms  |             MAIN_
+  0.04%  10.045ms  |               main
+  0.04%  10.045ms  |                 ???
+  0.20%  50.224ms  cuDevicePrimaryCtxRelease
+  0.20%  50.224ms  | __pgi_uacc_cuda_release_buffer
+  0.20%  50.224ms  |   __run_exit_handlers
+  0.20%  50.224ms  |     ???
+  0.20%  50.224ms  |       main
+  0.20%  50.224ms  |         ???
+  0.20%  50.224ms  cuInit
+  0.20%  50.224ms  | __pgi_uacc_cuda_init
+  0.20%  50.224ms  |   __pgi_uacc_enumerate
+  0.20%  50.224ms  |     __pgi_uacc_initialize
+  0.20%  50.224ms  |       __pgi_uacc_dataenterstart2
+  0.20%  50.224ms  |         MAIN_
+  0.20%  50.224ms  |           main
+  0.20%  50.224ms  |             ???
+  0.12%  30.134ms  __kmpc_critical_with_hint
+  0.12%  30.134ms  | _mp_p
+  0.12%  30.134ms  |   pghpf_rnumd_i8
+  0.12%  30.134ms  |     gol_fill_world
+  0.12%  30.134ms  |       MAIN_
+  0.12%  30.134ms  |         main
+  0.12%  30.134ms  |           ???
+  0.08%   20.09ms  gol_fill_world
+  0.08%   20.09ms  | MAIN_
+  0.08%   20.09ms  |   main
+  0.08%   20.09ms  |     ???
+  0.08%   20.09ms  __write
+  0.08%   20.09ms  | _IO_file_write@@GLIBC_2.2.5
+  0.08%   20.09ms  |   _IO_file_xsputn@@GLIBC_2.2.5
+  0.08%   20.09ms  |     buffered_vfprintf
+  0.08%   20.09ms  |       _IO_vfprintf
+  0.08%   20.09ms  |         _IO_fprintf
+  0.08%   20.09ms  |           __pgi_int4_compare
+  0.08%   20.09ms  |             kompare
+  0.08%   20.09ms  |               __pgi_compare
+  0.08%   20.09ms  |                 __pgi_uacc_usercompare1
+  0.08%   20.09ms  |                   do_compare
+  0.08%   20.09ms  |                     __pgi_uacc_excontig_recurse
+  0.08%   20.09ms  |                       __pgi_uacc_excontig_search
+  0.08%   20.09ms  |                         __pgi_uacc_usercompare_contiguous
+  0.08%   20.09ms  |                           __pgi_uacc_dataoffb2
+  0.08%   20.09ms  |                             MAIN_
+  0.08%   20.09ms  |                               main
+  0.08%   20.09ms  |                                 ???
+  0.08%   20.09ms  cuMemHostAlloc
+  0.08%   20.09ms  | __pgi_uacc_cuda_get_buffer
+  0.08%   20.09ms  |   __pgi_uacc_cuda_dataup1
+  0.08%   20.09ms  |     __pgi_uacc_dataup1
+  0.08%   20.09ms  |       __pgi_uacc_dataupx
+  0.08%   20.09ms  |         __pgi_uacc_dataonb
+  0.08%   20.09ms  |           MAIN_
+  0.08%   20.09ms  |             main
+  0.08%   20.09ms  |               ???
+  0.08%   20.09ms  ???
+  0.04%  10.045ms  | _mp_v
+  0.04%  10.045ms  | | gol_fill_world
+  0.04%  10.045ms  | |   MAIN_
+  0.04%  10.045ms  | |     main
+  0.04%  10.045ms  | |       ???
+  0.04%  10.045ms  | _mp_p
+  0.04%  10.045ms  |   pghpf_rnumd_i8
+  0.04%  10.045ms  |     gol_fill_world
+  0.04%  10.045ms  |       MAIN_
+  0.04%  10.045ms  |         main
+  0.04%  10.045ms  |           ???
+  0.08%   20.09ms  __kmp_get_global_thread_id_reg
+  0.08%   20.09ms  | _mp_v
+  0.08%   20.09ms  |   gol_fill_world
+  0.08%   20.09ms  |     MAIN_
+  0.08%   20.09ms  |       main
+  0.08%   20.09ms  |         ???
+  0.04%  10.045ms  _mp_p
+  0.04%  10.045ms  | pghpf_rnumd_i8
+  0.04%  10.045ms  |   gol_fill_world
+  0.04%  10.045ms  |     MAIN_
+  0.04%  10.045ms  |       main
+  0.04%  10.045ms  |         ???
+  0.04%  10.045ms  pghpf_rnumd_i8
+  0.04%  10.045ms  | gol_fill_world
+  0.04%  10.045ms  |   MAIN_
+  0.04%  10.045ms  |     main
+  0.04%  10.045ms  |       ???
+  0.04%  10.045ms  __memcmp_sse4_1
+  0.04%  10.045ms  | kompare
+  0.04%  10.045ms  |   __pgi_compare
+  0.04%  10.045ms  |     __pgi_uacc_usercompare1
+  0.04%  10.045ms  |       do_compare
+  0.04%  10.045ms  |         __pgi_uacc_excontig_recurse
+  0.04%  10.045ms  |           __pgi_uacc_excontig_search
+  0.04%  10.045ms  |             __pgi_uacc_usercompare_contiguous
+  0.04%  10.045ms  |               __pgi_uacc_dataoffb2
+  0.04%  10.045ms  |                 MAIN_
+  0.04%  10.045ms  |                   main
+  0.04%  10.045ms  |                     ???
+  0.04%  10.045ms  __kmpc_end_critical
+  0.04%  10.045ms  | _mp_v
+  0.04%  10.045ms  |   gol_fill_world
+  0.04%  10.045ms  |     MAIN_
+  0.04%  10.045ms  |       main
+  0.04%  10.045ms  |         ???
+  0.04%  10.045ms  __tls_get_addr
+  0.04%  10.045ms  | __kmp_get_global_thread_id_reg
+  0.04%  10.045ms  |   _mp_p
+  0.04%  10.045ms  |     pghpf_rnumd_i8
+  0.04%  10.045ms  |       gol_fill_world
+  0.04%  10.045ms  |         MAIN_
+  0.04%  10.045ms  |           main
+  0.04%  10.045ms  |             ???
+  0.04%  10.045ms  cuLaunchKernel
+  0.04%  10.045ms  | __pgi_uacc_cuda_launch3
+  0.04%  10.045ms  |   __pgi_uacc_cuda_launch2
+  0.04%  10.045ms  |     __pgi_uacc_cuda_launch
+  0.04%  10.045ms  |       __pgi_uacc_launch
+  0.04%  10.045ms  |         MAIN_
+  0.04%  10.045ms  |           main
+  0.04%  10.045ms  |             ???
+  0.04%  10.045ms  cuMemFreeHost
+  0.04%  10.045ms  | __pgi_uacc_cuda_free_device_buffers
+  0.04%  10.045ms  |   __pgi_uacc_cuda_release_buffer
+  0.04%  10.045ms  |     __run_exit_handlers
+  0.04%  10.045ms  |       ???
+  0.04%  10.045ms  |         main
+  0.04%  10.045ms  |           ???
+  0.04%  10.045ms  __c_mcopy4_avx
+  0.04%  10.045ms    __pgi_uacc_cuda_drain_down
+  0.04%  10.045ms      __pgi_uacc_cuda_get_buffer
+  0.04%  10.045ms        __pgi_uacc_cuda_datadown1
+  0.04%  10.045ms          __pgi_uacc_datadown1
+  0.04%  10.045ms            __pgi_uacc_datadownx
+  0.04%  10.045ms              __pgi_uacc_usercompare1
+  0.04%  10.045ms                do_compare
+  0.04%  10.045ms                  __pgi_uacc_excontig_recurse
+  0.04%  10.045ms                    __pgi_uacc_excontig_search
+  0.04%  10.045ms                      __pgi_uacc_usercompare_contiguous
+  0.04%  10.045ms                        __pgi_uacc_dataoffb2
+  0.04%  10.045ms                          MAIN_
+  0.04%  10.045ms                            main
+  0.04%  10.045ms                              ???
+
+======== Data collected at 100Hz frequency

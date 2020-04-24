@@ -1,0 +1,8 @@
+gol:
+     28, Generating Tesla code
+         29, !$acc loop seq
+         30, !$acc loop seq
+     28, Generating implicit copyin(world(1:rows,1:cols)) [if not already present]
+         Generating implicit copyout(old_world(1:rows,1:cols)) [if not already present]
+     29, Loop is parallelizable
+     30, Loop is parallelizable
