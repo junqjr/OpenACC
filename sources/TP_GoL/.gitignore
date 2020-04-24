@@ -4,5 +4,4 @@ gol
 movie
 *.o
 gol
-*.out
 *.gray
