@@ -1,0 +1,211 @@
+==31500== PGPROF is profiling process 31500, command: ./gol 4000 2000 50
+==31500== Profiling application: ./gol 4000 2000 50
+==31500== Profiling result:
+No kernels were profiled.
+No API activities were profiled.
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ OpenACC (excl):   59.77%  549.55ms        50  10.991ms  8.9484ms  22.894ms  acc_compute_construct@gol.f90:38
+                   21.17%  194.60ms        50  3.8920ms  3.1723ms  15.178ms  acc_compute_construct@gol.f90:32
+                   19.06%  175.27ms        50  3.5054ms  3.1912ms  5.4551ms  acc_compute_construct@gol.f90:51
+
+======== CPU profiling result (bottom up):
+Time(%)      Time  Name
+ 48.87%  3.03999s  gol__2F1L30_
+ 48.87%  3.03999s  | __kmp_invoke_microtask
+ 48.87%  3.03999s  |   __kmp_invoke_task_func
+ 40.84%  2.53999s  |     __kmp_launch_thread
+ 40.84%  2.53999s  |     | _ZL19__kmp_launch_workerPv
+ 40.84%  2.53999s  |     |   start_thread
+ 40.84%  2.53999s  |     |     clone
+  8.04%     500ms  |     __kmp_fork_call
+  8.04%     500ms  |       __kmpc_fork_call
+  8.04%     500ms  |         __pgi_kmpc_fork_call_num_gangs
+  8.04%     500ms  |           MAIN_
+  8.04%     500ms  |             main
+  8.04%     500ms  |               ???
+ 16.40%     1.02s  gol__3F1L30_
+ 16.40%     1.02s  | __kmp_invoke_microtask
+ 16.40%     1.02s  |   __kmp_invoke_task_func
+ 13.67%     850ms  |     __kmp_launch_thread
+ 13.67%     850ms  |     | _ZL19__kmp_launch_workerPv
+ 13.67%     850ms  |     |   start_thread
+ 13.67%     850ms  |     |     clone
+  2.73%     170ms  |     __kmp_fork_call
+  2.73%     170ms  |       __kmpc_fork_call
+  2.73%     170ms  |         __pgi_kmpc_fork_call_num_gangs
+  2.73%     170ms  |           MAIN_
+  2.73%     170ms  |             main
+  2.73%     170ms  |               ???
+ 16.24%     1.01s  gol__1F1L30_
+ 16.24%     1.01s  | __kmp_invoke_microtask
+ 16.24%     1.01s  |   __kmp_invoke_task_func
+ 13.50%     840ms  |     __kmp_launch_thread
+ 13.50%     840ms  |     | _ZL19__kmp_launch_workerPv
+ 13.50%     840ms  |     |   start_thread
+ 13.50%     840ms  |     |     clone
+  2.73%     170ms  |     __kmp_fork_call
+  2.73%     170ms  |       __kmpc_fork_call
+  2.73%     170ms  |         __pgi_kmpc_fork_call_num_gangs
+  2.73%     170ms  |           MAIN_
+  2.73%     170ms  |             main
+  2.73%     170ms  |               ???
+  8.52%     530ms  __kmp_fork_barrier(int, int)
+  8.52%     530ms  | __kmp_launch_thread
+  8.52%     530ms  |   _ZL19__kmp_launch_workerPv
+  8.52%     530ms  |     start_thread
+  8.52%     530ms  |       clone
+  1.61%     100ms  __kmp_join_barrier(int)
+  1.13%      70ms  | __kmp_internal_join
+  1.13%      70ms  | | __kmp_join_call
+  1.13%      70ms  | |   __kmpc_fork_call
+  1.13%      70ms  | |     __pgi_kmpc_fork_call_num_gangs
+  1.13%      70ms  | |       MAIN_
+  1.13%      70ms  | |         main
+  1.13%      70ms  | |           ???
+  0.48%      30ms  | __kmp_launch_thread
+  0.48%      30ms  |   _ZL19__kmp_launch_workerPv
+  0.48%      30ms  |     start_thread
+  0.48%      30ms  |       clone
+  1.13%      70ms  __kmp_acquire_queuing_lock
+  1.13%      70ms  | __kmpc_critical_with_hint
+  1.13%      70ms  |   _mp_p
+  1.13%      70ms  |     pghpf_rnumd_i8
+  1.13%      70ms  |       gol_fill_world
+  1.13%      70ms  |         MAIN_
+  1.13%      70ms  |           main
+  1.13%      70ms  |             ???
+  0.96%      60ms  __kmp_hardware_timestamp
+  0.96%      60ms  | __kmp_fork_barrier(int, int)
+  0.96%      60ms  |   __kmp_launch_thread
+  0.96%      60ms  |     _ZL19__kmp_launch_workerPv
+  0.96%      60ms  |       start_thread
+  0.96%      60ms  |         clone
+  0.80%      50ms  sched_yield
+  0.80%      50ms  | __kmp_fork_barrier(int, int)
+  0.80%      50ms  |   __kmp_launch_thread
+  0.80%      50ms  |     _ZL19__kmp_launch_workerPv
+  0.80%      50ms  |       start_thread
+  0.80%      50ms  |         clone
+  0.64%      40ms  __kmp_release_queuing_lock
+  0.64%      40ms  | _mp_v
+  0.64%      40ms  |   gol_fill_world
+  0.64%      40ms  |     MAIN_
+  0.64%      40ms  |       main
+  0.64%      40ms  |         ???
+  0.64%      40ms  gol_fill_world
+  0.64%      40ms  | MAIN_
+  0.64%      40ms  |   main
+  0.64%      40ms  |     ???
+  0.64%      40ms  MAIN_
+  0.64%      40ms  | main
+  0.64%      40ms  |   ???
+  0.64%      40ms  __kmpc_end_critical
+  0.64%      40ms  | _mp_v
+  0.64%      40ms  |   gol_fill_world
+  0.64%      40ms  |     MAIN_
+  0.64%      40ms  |       main
+  0.64%      40ms  |         ???
+  0.48%      30ms  __kmp_get_global_thread_id_reg
+  0.32%      20ms  | _mp_v
+  0.32%      20ms  | | gol_fill_world
+  0.32%      20ms  | |   MAIN_
+  0.32%      20ms  | |     main
+  0.32%      20ms  | |       ???
+  0.16%      10ms  | _mp_p
+  0.16%      10ms  |   pghpf_rnumd_i8
+  0.16%      10ms  |     gol_fill_world
+  0.16%      10ms  |       MAIN_
+  0.16%      10ms  |         main
+  0.16%      10ms  |           ???
+  0.48%      30ms  _dl_update_slotinfo
+  0.48%      30ms  | update_get_addr
+  0.48%      30ms  |   __tls_get_addr
+  0.48%      30ms  |     __kmp_get_global_thread_id_reg
+  0.32%      20ms  |       _mp_p
+  0.32%      20ms  |       | pghpf_rnumd_i8
+  0.32%      20ms  |       |   gol_fill_world
+  0.32%      20ms  |       |     MAIN_
+  0.32%      20ms  |       |       main
+  0.32%      20ms  |       |         ???
+  0.16%      10ms  |       _mp_v
+  0.16%      10ms  |         gol_fill_world
+  0.16%      10ms  |           MAIN_
+  0.16%      10ms  |             main
+  0.16%      10ms  |               ???
+  0.32%      20ms  pghpf_rnumd_i8
+  0.32%      20ms  | gol_fill_world
+  0.32%      20ms  |   MAIN_
+  0.32%      20ms  |     main
+  0.32%      20ms  |       ???
+  0.32%      20ms  update_get_addr
+  0.32%      20ms  | __tls_get_addr
+  0.32%      20ms  |   __kmp_get_global_thread_id_reg
+  0.32%      20ms  |     _mp_v
+  0.32%      20ms  |       gol_fill_world
+  0.32%      20ms  |         MAIN_
+  0.32%      20ms  |           main
+  0.32%      20ms  |             ???
+  0.32%      20ms  __tls_get_addr
+  0.32%      20ms  | __kmp_get_global_thread_id_reg
+  0.32%      20ms  |   _mp_v
+  0.32%      20ms  |     gol_fill_world
+  0.32%      20ms  |       MAIN_
+  0.32%      20ms  |         main
+  0.32%      20ms  |           ???
+  0.16%      10ms  ???
+  0.16%      10ms  | __kmp_get_global_thread_id_reg
+  0.16%      10ms  |   _mp_p
+  0.16%      10ms  |     pghpf_rnumd_i8
+  0.16%      10ms  |       gol_fill_world
+  0.16%      10ms  |         MAIN_
+  0.16%      10ms  |           main
+  0.16%      10ms  |             ???
+  0.16%      10ms  ???
+  0.16%      10ms  | _mp_v
+  0.16%      10ms  |   gol_fill_world
+  0.16%      10ms  |     MAIN_
+  0.16%      10ms  |       main
+  0.16%      10ms  |         ???
+  0.16%      10ms  _ZL23__kmp_set_indirect_lockPji
+  0.16%      10ms  | __kmpc_set_nest_lock
+  0.16%      10ms  |   _mp_bcs_nest
+  0.16%      10ms  |     gol__3F1L30_
+  0.16%      10ms  |       __kmp_invoke_microtask
+  0.16%      10ms  |         __kmp_invoke_task_func
+  0.16%      10ms  |           __kmp_fork_call
+  0.16%      10ms  |             __kmpc_fork_call
+  0.16%      10ms  |               __pgi_kmpc_fork_call_num_gangs
+  0.16%      10ms  |                 MAIN_
+  0.16%      10ms  |                   main
+  0.16%      10ms  |                     ???
+  0.16%      10ms  __kmpc_critical_with_hint
+  0.16%      10ms  | _mp_p
+  0.16%      10ms  |   pghpf_rnumd_i8
+  0.16%      10ms  |     gol_fill_world
+  0.16%      10ms  |       MAIN_
+  0.16%      10ms  |         main
+  0.16%      10ms  |           ???
+  0.16%      10ms  _mp_v
+  0.16%      10ms  | gol_fill_world
+  0.16%      10ms  |   MAIN_
+  0.16%      10ms  |     main
+  0.16%      10ms  |       ???
+  0.16%      10ms  _dl_relocate_object
+  0.16%      10ms    dl_open_worker
+  0.16%      10ms      _dl_catch_error
+  0.16%      10ms        _dl_open
+  0.16%      10ms          dlopen_doit
+  0.16%      10ms            _dl_catch_error
+  0.16%      10ms              _dlerror_run
+  0.16%      10ms                dlopen@@GLIBC_2.2.5
+  0.16%      10ms                  __pgi_uacc_add_profile_library
+  0.16%      10ms                    __pgi_uacc_add_profile_libraries
+  0.16%      10ms                      __pgi_uacc_globalinit
+  0.16%      10ms                        __pgi_uacc_enumerate
+  0.16%      10ms                          __pgi_uacc_initialize
+  0.16%      10ms                            __pgi_uacc_multicorestart
+  0.16%      10ms                              MAIN_
+  0.16%      10ms                                main
+  0.16%      10ms                                  ???
+
+======== Data collected at 100Hz frequency

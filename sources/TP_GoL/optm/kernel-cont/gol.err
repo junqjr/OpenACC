@@ -1,0 +1,30 @@
+Accelerator Kernel Timing data
+gol  NVIDIA  devicenum=0
+time(us): 166,310
+26: data region reached 2 times
+    26: data copyin transfers: 4
+         device time(us): total=2,483 max=1,285 min=4 avg=620
+    59: data copyout transfers: 2
+         device time(us): total=2,542 max=1,331 min=1,211 avg=1,271
+30: compute region reached 50 times
+    33: kernel launched 50 times
+        grid: [125x500]  block: [32x4]
+         device time(us): total=39,926 max=816 min=794 avg=798
+        elapsed time(us): total=41,321 max=844 min=821 avg=826
+    39: kernel launched 50 times
+        grid: [125x500]  block: [32x4]
+         device time(us): total=63,119 max=1,265 min=1,261 avg=1,262
+        elapsed time(us): total=63,934 max=1,283 min=1,275 avg=1,278
+    52: kernel launched 50 times
+        grid: [125x500]  block: [32x4]
+         device time(us): total=53,498 max=1,073 min=1,068 avg=1,069
+        elapsed time(us): total=54,268 max=1,090 min=1,082 avg=1,085
+    52: reduction kernel launched 50 times
+        grid: [1]  block: [256]
+         device time(us): total=3,872 max=78 min=77 avg=77
+        elapsed time(us): total=4,783 max=162 min=91 avg=95
+30: data region reached 100 times
+    30: data copyin transfers: 50
+         device time(us): total=301 max=7 min=5 avg=6
+    56: data copyout transfers: 50
+         device time(us): total=569 max=37 min=4 avg=11

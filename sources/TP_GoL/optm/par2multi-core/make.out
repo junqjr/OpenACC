@@ -1,0 +1,2 @@
+pgf90 -O0 -acc=noautopar -ta=multicore -Minfo=all  -c gol.f90 -o gol.o
+pgf90 -O0 -acc=noautopar -ta=multicore -Minfo=all gol.o -o gol

@@ -1,0 +1,20 @@
+gol:
+     26, Generating create(old_world(0:rows+1,0:cols+1)) [if not already present]
+         Generating copy(world(0:rows+1,0:cols+1)) [if not already present]
+     30, Generating copy(cells) [if not already present]
+     32, Loop is parallelizable
+     33, Loop is parallelizable
+         Generating Tesla code
+         32, !$acc loop gang, vector(128) ! blockidx%x threadidx%x
+         33, !$acc loop gang ! blockidx%y
+     38, Loop is parallelizable
+     39, Loop is parallelizable
+         Generating Tesla code
+         38, !$acc loop gang, vector(128) ! blockidx%x threadidx%x
+         39, !$acc loop gang ! blockidx%y
+     51, Loop is parallelizable
+     52, Loop is parallelizable
+         Generating Tesla code
+         51, !$acc loop gang, vector(128) ! blockidx%x threadidx%x
+         52, !$acc loop gang ! blockidx%y
+         53, Generating implicit reduction(+:cells)

@@ -1,0 +1,16 @@
+pgf90 -O0 -acc=noautopar -ta=multicore -Minfo=all  -c gol.f90 -o gol.o
+pgf90 -O0 -acc=noautopar -ta=multicore -Minfo=all gol.o -o gol
+gol:
+32, Loop is parallelizable
+    Generating Multicore code
+    32, !$acc loop gang
+33, Loop is parallelizable
+38, Loop is parallelizable
+    Generating Multicore code
+    38, !$acc loop gang
+39, Loop is parallelizable
+51, Loop is parallelizable
+    Generating Multicore code
+    51, !$acc loop gang
+52, Loop is parallelizable
+53, Generating implicit reduction(+:cells)

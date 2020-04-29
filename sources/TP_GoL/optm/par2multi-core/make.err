@@ -1,0 +1,9 @@
+gol:
+     30, Generating Multicore code
+         32, !$acc loop gang
+         39, !$acc loop gang
+         53, !$acc loop gang
+     34, Loop is parallelizable
+     41, Loop is parallelizable
+     55, Loop is parallelizable
+         Generating reduction(+:cells)

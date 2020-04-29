@@ -1,0 +1,2 @@
+pgf90 -O0 -acc=autopar -ta=tesla:cc35,cc60 -Minfo=accel  -c gol.f90 -o gol.o
+pgf90 -O0 -acc=autopar -ta=tesla:cc35,cc60 -Minfo=accel gol.o -o gol
