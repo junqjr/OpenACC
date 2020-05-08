@@ -1,0 +1,4 @@
+21, Generating Tesla code
+    23, #pragma acc loop seq
+21, Generating Single core code
+27, Accelerator restriction: induction variable live-out from loop: counter

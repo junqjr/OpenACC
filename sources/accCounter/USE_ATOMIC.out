@@ -1,0 +1,5 @@
+21, Generating Tesla code
+    23, #pragma acc loop gang, vector(128) /* blockIdx.x threadIdx.x */
+21, Generating Multicore code
+    23, #pragma acc loop gang
+21, Generating implicit copy(counter) [if not already present]

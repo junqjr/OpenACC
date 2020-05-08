@@ -1,0 +1,7 @@
+main:
+24, Generating Tesla code
+    26, #pragma acc loop gang /* blockIdx.x */
+    30, #pragma acc loop seq /* threadIdx.y */
+        Generating reduction(+:partialSum)
+24, Generating implicit copy(counter) [if not already present]
+30, Loop is parallelizable
