@@ -1,0 +1,35 @@
+pgc++ -fast -ta=multicore -Minfo=all -Mneginfo main.cpp -o cg.x
+initialize_vector(vector &, double):
+     20, include "vector.h"
+          40, Memory set idiom, loop replaced by call to __c_mset8
+dot(const vector &, const vector &):
+     21, include "vector_functions.h"
+          28, Loop is parallelizable
+              Generating Multicore code
+              28, #pragma acc loop gang
+          28, Loop not vectorized/parallelized: not countable
+              FMA (fused multiply-add) instruction(s) generated
+          29, Generating implicit reduction(+:sum)
+waxpby(double, const vector &, double, const vector &, const vector &):
+     21, include "vector_functions.h"
+          43, Loop is parallelizable
+              Generating Multicore code
+              43, #pragma acc loop gang
+          43, Loop not vectorized/parallelized: not countable
+              FMA (fused multiply-add) instruction(s) generated
+allocate_3d_poisson_matrix(matrix &, int):
+     22, include "matrix.h"
+          43, Loop not fused: different loop trip count
+          44, Loop not vectorized/parallelized: loop count too small
+          59, Loop not vectorized: data dependency
+matvec(const matrix &, const vector &, const vector &):
+     23, include "matrix_functions.h"
+          31, Loop is parallelizable
+              Generating Multicore code
+              31, #pragma acc loop gang
+          31, Loop not vectorized/parallelized: not countable
+              FMA (fused multiply-add) instruction(s) generated
+          36, Loop is parallelizable
+              Loop not vectorized: non-stride-1 array reference
+              Loop not vectorized: mixed data types
+              Loop unrolled 2 times

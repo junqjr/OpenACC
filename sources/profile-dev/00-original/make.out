@@ -1,0 +1,8 @@
+pgc++ -O0 -Minfo=all,ccff -Mneginfo   -c -o main.o main.cpp
+dot(const vector &, const vector &):
+     31, FMA (fused multiply-add) instruction(s) generated
+waxpby(double, const vector &, double, const vector &, const vector &):
+     42, FMA (fused multiply-add) instruction(s) generated
+matvec(const matrix &, const vector &, const vector &):
+     41, FMA (fused multiply-add) instruction(s) generated
+pgc++ main.o -o cg.x -O0 -Minfo=all,ccff -Mneginfo

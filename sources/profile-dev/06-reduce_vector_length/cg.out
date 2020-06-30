@@ -1,0 +1,80 @@
+Rows: 3442951, nnz: 92553775
+Iteration: 0, Tolerance: 2.8121e+08
+Iteration: 10, Tolerance: 1.3910e+07
+Iteration: 20, Tolerance: 4.7619e+05
+Iteration: 30, Tolerance: 1.7089e+04
+Iteration: 40, Tolerance: 6.1091e+02
+Iteration: 50, Tolerance: 2.1671e+01
+Iteration: 60, Tolerance: 7.5519e-01
+Iteration: 70, Tolerance: 2.4847e-02
+Iteration: 80, Tolerance: 5.8162e-05
+Iteration: 90, Tolerance: 2.5592e-06
+Total Iterations: 100 Total Time: 4.484454s
+Final Tolerance: 1.2610e-07
+
+Accelerator Kernel Timing data
+/home/cjunqueira/Documents/boulot/trainning/openacc/junior/Chapter02/cpp/06-reduce_vector_length/vector.h
+  _Z3dotRK6vectorS1_  NVIDIA  devicenum=0
+    time(us): 132,983
+    25: compute region reached 200 times
+        25: data copyin transfers: 200
+             device time(us): total=823 max=11 min=2 avg=4
+        28: kernel launched 200 times
+            grid: [26899]  block: [128]
+             device time(us): total=124,163 max=749 min=575 avg=620
+            elapsed time(us): total=127,872 max=780 min=590 avg=639
+        28: reduction kernel launched 200 times
+            grid: [1]  block: [256]
+             device time(us): total=6,011 max=34 min=29 avg=30
+            elapsed time(us): total=9,316 max=266 min=42 avg=46
+        28: data copyout transfers: 200
+             device time(us): total=1,986 max=18 min=5 avg=9
+    25: data region reached 400 times
+/home/cjunqueira/Documents/boulot/trainning/openacc/junior/Chapter02/cpp/06-reduce_vector_length/vector.h
+  _Z6matvecRK6matrixRK6vectorS4_  NVIDIA  devicenum=0
+    time(us): 4,129,914
+    27: compute region reached 101 times
+        30: kernel launched 101 times
+            grid: [65535]  block: [32]
+             device time(us): total=4,129,914 max=48,569 min=40,465 avg=40,890
+            elapsed time(us): total=4,131,684 max=48,589 min=40,479 avg=40,907
+    27: data region reached 404 times
+/home/cjunqueira/Documents/boulot/trainning/openacc/junior/Chapter02/cpp/06-reduce_vector_length/vector.h
+  _Z15allocate_vectorR6vectorj  NVIDIA  devicenum=0
+    time(us): 20
+    29: data region reached 10 times
+        29: data copyin transfers: 5
+             device time(us): total=20 max=4 min=4 avg=4
+/home/cjunqueira/Documents/boulot/trainning/openacc/junior/Chapter02/cpp/06-reduce_vector_length/vector.h
+  _Z11free_vectorR6vector  NVIDIA  devicenum=0
+    time(us): 20
+    34: data region reached 8 times
+        34: data copyin transfers: 4
+             device time(us): total=20 max=7 min=4 avg=5
+/home/cjunqueira/Documents/boulot/trainning/openacc/junior/Chapter02/cpp/06-reduce_vector_length/vector.h
+  _Z6waxpbydRK6vectordS1_S1_  NVIDIA  devicenum=0
+    time(us): 249,145
+    41: compute region reached 302 times
+        43: kernel launched 302 times
+            grid: [26899]  block: [128]
+             device time(us): total=249,145 max=949 min=560 avg=824
+            elapsed time(us): total=254,358 max=991 min=579 avg=842
+    41: data region reached 604 times
+/home/cjunqueira/Documents/boulot/trainning/openacc/junior/Chapter02/cpp/06-reduce_vector_length/vector.h
+  _Z17initialize_vectorR6vectord  NVIDIA  devicenum=0
+    time(us): 4,224
+    43: update directive reached 2 times
+        43: data copyin transfers: 4
+             device time(us): total=4,224 max=1,284 min=827 avg=1,056
+/home/cjunqueira/Documents/boulot/trainning/openacc/junior/Chapter02/cpp/06-reduce_vector_length/vector.h
+  _Z26allocate_3d_poisson_matrixR6matrixi  NVIDIA  devicenum=0
+    time(us): 86,118
+    73: data region reached 2 times
+        73: data copyin transfers: 73
+             device time(us): total=86,118 max=1,288 min=4 avg=1,179
+/home/cjunqueira/Documents/boulot/trainning/openacc/junior/Chapter02/cpp/06-reduce_vector_length/vector.h
+  _Z11free_matrixR6matrix  NVIDIA  devicenum=0
+    time(us): 12
+    82: data region reached 2 times
+        82: data copyin transfers: 3
+             device time(us): total=12 max=4 min=4 avg=4

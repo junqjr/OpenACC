@@ -1,0 +1,16 @@
+pgc++ -O0 -ta=tesla,lineinfo -Minfo=all,ccff -Mneginfo main.cpp -o cg.x
+dot(const vector &, const vector &):
+     31, FMA (fused multiply-add) instruction(s) generated
+waxpby(double, const vector &, double, const vector &, const vector &):
+     21, include "vector_functions.h"
+          40, Generating implicit copyin(ycoefs[:n],xcoefs[:n]) [if not already present]
+              Generating implicit copyout(wcoefs[:n]) [if not already present]
+          41, Complex loop carried dependence of ycoefs-> prevents parallelization
+              Loop carried dependence of wcoefs-> prevents parallelization
+              Loop carried backward dependence of wcoefs-> prevents vectorization
+              Accelerator serial kernel generated
+              Generating Tesla code
+              41, #pragma acc loop seq
+matvec(const matrix &, const vector &, const vector &):
+     21, include "vector_functions.h"
+          41, FMA (fused multiply-add) instruction(s) generated

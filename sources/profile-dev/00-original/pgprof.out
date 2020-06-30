@@ -1,0 +1,31 @@
+Rows: 3442951, nnz: 92553775
+Iteration: 0, Tolerance: 2.8121e+08
+Iteration: 10, Tolerance: 1.3910e+07
+Iteration: 20, Tolerance: 4.7619e+05
+Iteration: 30, Tolerance: 1.7089e+04
+Iteration: 40, Tolerance: 6.1091e+02
+Iteration: 50, Tolerance: 2.1671e+01
+Iteration: 60, Tolerance: 7.5519e-01
+Iteration: 70, Tolerance: 2.4847e-02
+Iteration: 80, Tolerance: 5.8162e-05
+Iteration: 90, Tolerance: 2.5592e-06
+Total Iterations: 100 Total Time: 29.762435s
+Final Tolerance: 1.2610e-07
+
+======== CPU profiling result (bottom up):
+Time(%)      Time  Name
+ 87.43%    26.58s  matvec(matrix const &, vector const &, vector const &)
+ 87.43%    26.58s  | main
+  6.51%     1.98s  waxpby(double, vector const &, double, vector const &, vector const &)
+  6.51%     1.98s  | main
+  4.87%     1.48s  dot(vector const &, vector const &)
+  4.87%     1.48s  | main
+  1.12%     340ms  allocate_3d_poisson_matrix(matrix&, int)
+  1.12%     340ms  | main
+  0.03%      10ms  munmap
+  0.03%      10ms  | free_vector(vector&)
+  0.03%      10ms  |   main
+  0.03%      10ms  initialize_vector(vector&, double)
+  0.03%      10ms    main
+
+======== Data collected at 100Hz frequency

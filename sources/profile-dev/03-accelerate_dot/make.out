@@ -1,0 +1,18 @@
+pgc++ -O0 -ta=tesla,lineinfo -Minfo=all,ccff -Mneginfo main.cpp -o cg.x
+dot(const vector &, const vector &):
+     21, include "vector_functions.h"
+          25, Generating implicit copyin(xcoefs[:n],ycoefs[:n]) [if not already present]
+          28, Loop is parallelizable
+              Generating Tesla code
+              28, #pragma acc loop gang, vector(128) /* blockIdx.x threadIdx.x */
+              29, Generating implicit reduction(+:sum)
+waxpby(double, const vector &, double, const vector &, const vector &):
+     21, include "vector_functions.h"
+          41, Generating copyin(xcoefs[:x->n]) [if not already present]
+              Generating copy(ycoefs[:y->n],wcoefs[:w->n]) [if not already present]
+          43, Loop is parallelizable
+              Generating Tesla code
+              43, #pragma acc loop gang, vector(128) /* blockIdx.x threadIdx.x */
+matvec(const matrix &, const vector &, const vector &):
+     21, include "vector_functions.h"
+          41, FMA (fused multiply-add) instruction(s) generated
