@@ -1,7 +1,11 @@
 # OpenACC
 Slides and source files for the OpenACC introduction course
 
-## .:
+## Slides
+* presentation.pdf
+* profile-dev.pdf
+
+## ./
 * accCounter
 * accParaCounter
 * arrayshape
