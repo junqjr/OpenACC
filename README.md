@@ -1,5 +1,5 @@
 # OpenACC
-Sources from the OpenACC introduction course
+Slides and source files for the OpenACC introduction course
 
 ## .:
 * accCounter
